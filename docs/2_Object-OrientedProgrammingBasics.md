@@ -12,6 +12,7 @@ In the realm of programming, understanding the fundamental concepts of objects, 
 - Create and utilize parameters in constructors.
 - Explain the use of the 'this' keyword.
 
+</br>
 
 # Objects, Classes, and Instances
 Before we start getting into the technical details and how to write the code for an application, we're going to take a step back and look at basic terminology from a tangible perspective.
@@ -19,31 +20,39 @@ Before we start getting into the technical details and how to write the code for
 ## Objects
 An architect is looking to build a new housing development. They generally start out with some sort of conceptual design. This is our object. An ***object***, in the context of programming, is a person, place, thing, or idea that we want to replicate in a digital format. In our case, the architect wants to build a house. In order to do this, they will need to create a set of instructions so that the construction company has something to build from.
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.1: "House" by Jason Pratt is licensed under CC BY 2.0.</strong></caption>
 
 ![Exterior view of a two-story dark red brick Craftsman-style house with a covered front porch, white trim, and a small front yard.](./assets/2-1_House.jpg)
-
+</div>
 
 ## Classes
 The blueprints that are developed by the architect give details as to the number of rooms the house will have, how large each of the rooms should be, or what color siding it should have. All of the characteristics of the house are getting written inside of this blueprint.
 
 From a programming perspective, this blueprint is a ***class***. It's a series of instructions that the application can use to build our digital objects. It contains all of the characteristics of our object, as well as a series of actions that our object can perform.
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.2: "House Plans: Ground Floor" by Fugue is licensed under CC BY-SA 2.0.</strong></caption>
 
 ![Architectural floor plan labeled showing a residential layout with a kitchen, TV corner, living room, dining area, central entrance hall, laundry room, and bathroom.](./assets/2-2_Blueprint.jpg)
+</div>
 
 
 ## Instances
 Let's say the construction company builds five houses from these blueprints. As people start buying and moving into those houses, they will add their own spin to it. They will paint the rooms. They will start decorating, and store their stuff in the closets. They will make the house unique. 
 
-
+</br>
+<div align="center">
 <caption><strong>Figure 2.3: "Little Neighborhood" by Rachel Elaine. is licensed under CC BY 2.0.</strong></caption>
 
 ![High-angle aerial photograph of a suburban residential neighborhood featuring rows of multi-unit townhomes, green lawns, winding streets, and carports.](./assets/2-3_Neighborhood.jpg)
+</div>
 
 From a programming perspective, this individual house is known as an ***instance***. An instance is a digital representation of the class, or blueprint, that holds all of the distinct information and data for the application to use. Even though there are multiple object iterations made from the class, each one is distinct from another. 
 
+</br>
 
 # Defining a Class
 Now that we know the difference between an object, class, and instance, let's start creating an application. Throughout this text we will create a course management application. It will have a place to store student information, assignments, and a gradebook. For this module, we will start defining our first object, a student.
@@ -66,6 +75,8 @@ The class header consists of the keywords public and class, and a name. The publ
 ***Keywords***, or reserved words, are a set of commands that a Java compiler recognizes. These commands get translated into Bytecode that the Java Virtual machine (JVM) uses to then process data. In our example, class is a keyword that tells the Java compiler that this section of code will define an object. These words cannot be used as class, variable, or method names in our code.
 
 A list of [Java keywords](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html) can be found in Oracle's Java documentation .
+
+</br>
 
 # Naming Conventions
 When you create your class, you need to give it a name that clearly states what this class is responsible for. If I am trying to create a class that will define an employee at a company, I will call the class Employee. If I were to create a class that will help define different pets, I would call it Animal.
@@ -91,6 +102,8 @@ public class CollegeProfessor
 ```
 
 You'll notice that in each example there is a set of curly brackets directly after that class heading. This is a ***code block***. In Java, a code block contains a set of executable statements. The brackets help break up a large source code file into manageable chunks, so you can see what's related to what. In our case, everything that is going to belong to the class definition is going to be directly after the class header.
+
+</br>
 
 # Comments
 One of the more useful, but often forgotten, things that we can do within our code is leave notes for ourselves and other programmers. We do that through the use of ***comments***. These notes remind us what we're planning to do in our code. It also provides insight for the programmers that inherit our application. In Java, there are two different types of comments: single-line, and multi-line.
@@ -242,16 +255,21 @@ public class Student
 
 The generated Javadoc file for the class with our comments highlighted is shown in Figure 2.4. To view this in BlueJ, click on the dropdown box in the top right of the code editor and select 'Documentation' (Figure 2.5).
 
- 
+ </br>
+<div align="center">
 <caption><strong>Figure 2.4: Code documentation generated using Javadoc</strong></caption>
 
 ![Javadoc documentation page for the Java class 'Student', showing class inheritance from java.lang.Object, description, version 1.0, and author Jane Doe.](./assets/2-4_CodeDocumentationGenerated.png)
- 
+ </div>
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.5: Code documentation option within code editor.</strong></caption>
 
 ![A drop-down menu in a software interface showing the options 'Source Code' (selected) and 'Documentation'.](./assets/2-5_EditorDocumentationMenu.png)
+</div>
 
+</br> 
 
 # Instance Variables
 ***Instance variables***, also known as ***fields***, are named references pointing to the memory location where your data will be stored. These are the characteristics that describe your class. When declaring instance variables, you will need three pieces of information: visibility, data type, and a name.
@@ -274,20 +292,23 @@ public class Instructor
 
 If the Student class has anything that is declared public, the Instructor class can access it. This includes adding, modifying, or deleting any values that are stored within the Student class.
 
-
+</br>
+<div align="center">
 <caption><strong>Figure 2.6: Encapsulation - public interaction with an external class.</strong></caption>
 
 ![Diagram showing an arrow labeled 'Available to Instructor class' pointing from an Instructor class box to a 'public' component inside a Student class box.](./assets/2-6_EncapsulationPublic.png)
- 
+ </div>
 
 
 ### Private
 ***private***, on the other hand, only allows the current class to access information contained within it. External classes cannot see or use it. 
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.7: Encapsulation - private interaction with an external class.</strong></caption>
 
 ![Diagram showing class access control: a solid arrow labeled 'Available to Instructor class' points to a 'public' component, while a dashed arrow labeled 'Hidden from Instructor class' points to a 'private' component inside the Student class.](./assets/2-7_EncapsulationPrivate.png)
- 
+ </div>
 
 The main reason why you would want to "hide" something from another class is to make sure it cannot be directly accessed or modified. You'll see why this is important in the next module when discussing updating and retrieving data through the use of methods.
 
@@ -334,7 +355,7 @@ One object data type that we will be working with in the Student class is String
 | *toLowerCase()*     | Converts all letters to lowercase                                                                  | "Hello World"  | "hello world" |
 | *replace('l', 'p')* | Replaces a given character to a new one, in this case replacing the letter 'l' with the letter 'p' | "Hello World"  | "Heppo Worpd" |
 
-
+</br>
 
 Similar in manner to char when assigning or comparing values, String values need to be enclosed in double quotes ("). As we create classes within our course management application, we will incorporate them into each other to create a fully functional system.
 
@@ -368,6 +389,7 @@ public class Student
 }
 ```
 
+</br>
 
 # Constructors
 A ***constructor*** is in charge of taking the instruction defined in a class and creating a new instance of it. In our earlier example, this is the component that builds the houses as specified in the blueprint. 
@@ -432,7 +454,9 @@ System.out.println("hello " + "Levi");
 
 <caption><strong>Console Output:</strong></caption> 
 
-> hello Levi
+```
+hello Levi
+```
 
 ### null
 When you are dealing with any object data type, you need to make sure that you have initialized the variable before trying to add, modify, or delete the values assigned to it. By default, all declared object type variables are assigned to null. ***Null*** represents the absence of a value and structure. Let's go back to the house building example from earlier. Once the architect has created their blueprint, they go out and purchase land to build on. They are "declaring" that that property will have a house built on it. At that point there is no foundation, walls, or anything else that resembles a house.
@@ -458,7 +482,9 @@ System.out.println("hello " + null);
 
 <caption><strong>Console Output:</strong></caption>
 
-> hello null
+```
+hello null
+```
 
 
 Since we have the *firstName* variable declared, but have not yet initialized or assigned it a value, null will be used in place of a retrieved value. 
@@ -481,10 +507,10 @@ System.out.println(hello "+ firstName); //output #2
 
 <caption><strong>Console Output:</strong></caption>
 
-> hello Levi
-> 
-> hello Bentley
-
+```
+hello Levi
+hello Bentley
+```
 
 What happens to the originally assigned value, "Levi"? When a variable is assigned a new value, the old value is discarded. Whatever was assigned last is what stays. Eventually, Java's [garbage collection process](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html) will run behind the scenes and remove the discarded data from the system. The details on how the garbage collector process works is out of scope at this time due to its complexity.
 
@@ -504,6 +530,8 @@ public Student()
 ```
 
 These starting values can be anything. Your application, its usage, and the business process its executing dictates what starting values should be used. In our case, we will always assume that a brand-new Student will be given an ID of 99999. This can be considered a dummy value which is data that would not occur during the normal usage of the application. For *firstName* and *lastName* we are using empty Strings `""`, two double quotes without spaces. These show that there is an underlying structure of a String, but nothing of note is currently being stored. This is how String is typically initialized if no starting value is available. Remember, with object data types, you cannot add, modify, or delete values without an underlying structure. We are also assuming that our new Student does not have a GPA, they have not decided what their major is, and they are currently not an actively enrolled student.
+
+</br>
 
 # Constructor Overloading
 When we create new instances of our class, we aren't relegated to just using a single constructor. We can have multiple constructors with various levels of customization. This is called overloading. ***Overloading*** is a way for us to create a new constructor, and in the next module new methods, using the same name, but a different parameter signature. With a default constructor, we have an empty set of parentheses, so there's no formal parameters being passed in. 
@@ -545,6 +573,7 @@ public Student(String, int, boolean)
 
 Consider the two constructors below. One has parameters asking for the student's first name and their student ID. The second is asking for their last name and student ID. The most important thing that you will need to watch out for in this situation is duplicate signatures. To us as programmers, the overloaded constructors are different in terms of context. We are asking for different names. The compiler, however, sees the constructors the same in terms of syntax.
 
+</br>
 <caption><strong>Table 2.2: Constructor overloading - signature conflicts.</strong></caption>
 
 |Constructor Declaration|Signature|
@@ -552,9 +581,10 @@ Consider the two constructors below. One has parameters asking for the student's
 |public Student(String newFName, int newStudentID)|public Student(String, int)|
 |public Student(String newLName, int newStudentID)|public Student(String, int)|
 
-
+</br>
 If we were to flip the parameters around in the second constructor, the compiler would recognize them as two separate entities. Even though they are both using the same data types, the order of the data type has changed. Thus, making the constructors unique.
 
+</br>
 <caption><strong>Table 2.3: Constructor overloading - signature resolution.</strong></caption>
 
 |Constructor Declaration|Signature|
@@ -571,10 +601,12 @@ The BlueJ IDE shows the scope of each component within the class shown in Figure
 
 Declaring local variables in a code block are similar to instance variables, but they lack a visibility modifier. Since they only exist within the current code block, visibility modifiers are not necessary. An example of this is in the default constructor on line 9. Local variables, not parameters, must also be initialized before they can be used.
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.8: Local variables and scope.</strong></caption>
 
 ![BlueJ editor showing Java code for a Student class with scope coloring highlighting the class level in light green, constructor scopes in yellow, and inner statement blocks in white](./assets/2-8_LocalVariableScope.png)
- 
+ </div>
 
 
 ### 'this' Keyword
@@ -598,35 +630,43 @@ public Student(String firstName)
 
 There's a catch though. When you have a parameter the same as your instance variable, it causes confusion in the compiler because of how it looks up variable name references. Once the compiler comes across any variable name, in our case *firstName*, it first looks locally to see if a variable of that name has been declared (Figure 2.9). If one is available, the compiler uses it. 
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.9: Variable lookup - step one.</strong></caption>
 
 ![Java code snippet for class Student showing a red arrow pointing from the line 'firstName = newFirstName;' up to the constructor parameter 'newFirstName' in 'public Student(String newFirstName)'.](./assets/2-9_LookupOne.png)
- 
+ </div>
 
 
 If the compiler doesn't find a local declaration, then expand its search to the instance variables (Figure 2.10). 
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.10: Variable lookup - step two.</strong></caption>
 
 ![Java code snippet for class Student showing a red arrow pointing from line 15 ('firstName = newFirstName;') up to line 4 where the instance variable 'private String firstName;' is declared.](./assets/2-10_LookupTwo.png)
- 
+ </div>
 
 This lookup process occurs every time a variable is used. From the example with different instance and parameter names, we can see that the variables would be referenced correctly. The new information being pulled in from the parameter will be assigned to the instance variable. 
 
 What happens when the names are the same? The same lookup process occurs, but each side of the assignment statement is referencing the same parameter Figure 2.11). The value of the parameter is being accessed and modified. The instance variable is ignored completely. 
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.11: Variable lookup - conflict with variables of the same name.</strong></caption>
 
 ![Java code snippet showing shadowing in a Student constructor, with two red arrows pointing from both uses of 'firstName' in 'firstName = firstName;' up to the parameter 'firstName' in the constructor signature.](./assets/2-11_LookupConflict.png)
- 
+ </div>
 
 
 We are able to bypass the first step of the lookup process and force the compiler to look at the instance variables by using the `this` keyword. If we modify our constructor and add the `this` keyword to the left side of our assignment statement, the compiler knows to skip the local lookup and immediately go to the instance variables (Figure 2.12).
 
+</br>
+<div align="center">
 <caption><strong>Figure 2.12: Variable lookup - using 'this' keyword to bypass variable lookup step one.</strong></caption>
 
 ![Java code snippet using 'this' keyword to resolve variable shadowing. A red arrow points from 'this.firstName' to the instance variable on line 4, and a second red arrow points from the assignment 'firstName' up to the constructor parameter on line 7.](./assets/2-12_LookupThis.png)
- 
+ </div>
 
 
 ## State
@@ -670,6 +710,7 @@ public class Student
 
 These are the only locations where you are permitted to assign a value to a constant. Most programmers opt to declare and initialize constants at the beginning of the class. 
 
+</br>
 
 # Summary
 **Objects:** Objects in programming represent tangible or conceptual entities that we aim to replicate digitally.
@@ -697,7 +738,7 @@ These are the only locations where you are permitted to assign a value to a cons
 **Constants:** Constants hold values that do not change during the execution of a program. They are declared using the final keyword and typically named in all caps with underscores (e.g., MAX_CREDIT_HOURS).
 
 
-
+</br>
 
 # KEY TERMS
 - Class
