@@ -360,11 +360,11 @@ public class Student
  	    INSTANCE VARIABLES		POTENTIAL VALUES
  	*/
  	private int studentID;		    //555129876
- 	private String firstName;		//"John"
- 	private String lastName;		//"Smith"
+ 	private String firstName;	//"John"
+ 	private String lastName;	//"Smith"
  	private double gpa; 		    //3.75
 	private String major; 		    //"Computer Science"
-  	private boolean isActiveStudent;//true
+  	private boolean isActiveStudent;    //true
 }
 ```
 
@@ -378,7 +378,7 @@ Default constructors are used to give instance variables default starting values
 ```java
 public Student()
 {
-	//instance variables are assigned values here
+    //instance variables are assigned values here
 }
 ```
 
@@ -481,6 +481,7 @@ System.out.println(hello "+ firstName); //output #2
 <caption><strong>Console Output:</strong></caption>
 
 > hello Levi
+> 
 > hello Bentley
 
 
