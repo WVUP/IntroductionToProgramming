@@ -14,10 +14,10 @@ What is Java? That is not a simple question to answer. Java has a lot of differe
 
 The JVM is the part of Java that is installed on the computer's operating system, and lets a user run Java programs. The JRE contains the JVM and includes libraries that the program may use. The last core component of the Java Ecosystem is the JDK, which includes the JRE along with the tools needed to develop Java applications. These include the Java compiler, which translates the code you write into Bytecode the JVM can understand. 
 
-<caption><strong>Figure 1.1: Java Ecosystem</strong></caption>
-
-![Diagram of the Java Development Kit (JDK) architecture containing the Java Runtime Environment (JRE) and Development Tools, with JRE further containing the Java Virtual Machine (JVM) and Libraries.](./docs/images/1-1_JavaEcosystem.png)
-
+<figure>
+  <img class="align-center" src="./docs/images/1-1_JavaEcosystem.png" alt="Diagram of the Java Development Kit (JDK) architecture containing the Java Runtime Environment (JRE) and Development Tools, with JRE further containing the Java Virtual Machine (JVM) and Libraries.">
+  <figcaption class="align-center">Figure 1.1: Java Ecosystem</figcaption>
+</figure>
 
 
 The JDK also includes the standard Java libraries so developers can use them in the programs they develop. These libraries are a collection of pre-written code that developers can use to perform specific tasks without having to write the code from scratch. Libraries help save time and effort by providing ready-made solutions for common programming tasks. 
