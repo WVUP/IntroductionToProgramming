@@ -34,6 +34,8 @@
 - [Module 6]()
 - [Module 7]()
 
+---
+
 ## Assignments
 ### Yummy Bytes Bakery
 - [Module 2](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_2) 
