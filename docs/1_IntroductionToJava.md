@@ -1,4 +1,5 @@
-# Introduction
+# Introduction to Java
+
 This module prepares you for the text ahead. It will give a brief overview of the Java programming language and its history. It will also introduce you to the BlueJ IDE that we're using throughout this text and upcoming assignments. You'll then be introduced to the Course Management System and Yummy Bytes Bakery point-of-sale system that you will be developing throughout the course. Finally, it will also show you where to find answers to Java syntax questions that may arise as you're developing Java applications.
 
 ## Learning Objectives

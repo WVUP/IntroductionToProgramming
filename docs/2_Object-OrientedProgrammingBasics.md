@@ -1,4 +1,5 @@
-# Introduction
+# Object-Oriented Programming Basics
+
 In the realm of programming, understanding the fundamental concepts of objects, classes, and instances is crucial. These terms, though often used interchangeably, hold distinct meanings and functions within object-oriented programming (OOP). This module will delve into these concepts through tangible analogies and practical examples, using a course management application as our framework. We will start to explore core components that define a class, such as instance variables and constructors. Additionally, we will touch on key aspects like naming conventions, data types, and the significance of comments in code. 
 
 ## Learning Objectives
