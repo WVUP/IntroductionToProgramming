@@ -1,4 +1,4 @@
-# Fuzzy Bytes Pet Adoption - Assignment
+# Fuzzy Bytes Pet Adoption - Module 2 Assignment
 
 ## Dog Class
 1.	Create a class called Dog with the following instance variables and data types (in parentheses):
