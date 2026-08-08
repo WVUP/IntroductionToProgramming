@@ -14,9 +14,11 @@ What is Java? That is not a simple question to answer. Java has a lot of differe
 
 The JVM is the part of Java that is installed on the computer's operating system, and lets a user run Java programs. The JRE contains the JVM and includes libraries that the program may use. The last core component of the Java Ecosystem is the JDK, which includes the JRE along with the tools needed to develop Java applications. These include the Java compiler, which translates the code you write into Bytecode the JVM can understand. 
 
+<caption><strong>Figure 1.1: Java Ecosystem</strong></caption>
+
 ![Alt text](/Modules/Images/1-1_JavaEcosystem.png)
 
-Figure 1.1: Java Ecosystem
+
 
 The JDK also includes the standard Java libraries so developers can use them in the programs they develop. These libraries are a collection of pre-written code that developers can use to perform specific tasks without having to write the code from scratch. Libraries help save time and effort by providing ready-made solutions for common programming tasks. 
 
@@ -68,73 +70,97 @@ JavaScript was created by a software engineer at Netscape named Brendan Eich, an
 # BlueJ
 The integrated development environment (IDE) that we'll use throughout this text is [BlueJ](https://bluej.org). This IDE is great for learning Java if you've had no prior programming experience because it gives you visual representations of the abstract concepts we'll cover in the text. It is available on Windows, Mac OS, and Linux platforms.
 
+<caption><strong>Figure 1.2: BlueJ - Main Window.</strong></caption>
+
 ![Alt text](/Modules/Images/1-2_BlueJ_MainWindow.png)
  
-Figure 1.2: BlueJ - Main Window.
+
 
 The main area of BlueJ shows the components of your application. For this text we will predominantly work with classes which contain the source code for their respective parts of the application. These are shown as yellow boxes. If classes interact with each other, that relationship is shown with an arrow.
 
+<caption><strong>Figure 1.3: BlueJ - Classes.</strong></caption>
+
 ![Alt text](/Modules/Images/1-3_BlueJ_Classes.png)
  
-Figure 1.3: BlueJ - Classes.
+
 
 On the left-hand side you'll see buttons that will allow you to create new classes and compile your code. What compile does is it takes all of your source code that you've created inside of each of these classes and converts it into Bytecode that the JVM understands.
 
+<caption><strong>Figure 1.4: BlueJ - New classes and compile.</strong></caption>
+
 ![Alt text](/Modules/Images/1-4_BlueJ_NewClassesCompile.png)
  
-Figure 1.4: BlueJ - New classes and compile.
+
 
 At the bottom of the main window is the object bench. Every instance of our classes that we are creating will show up here. You can interact with them independently or inspect them to see what their state is.
 
+<caption><strong>Figure 1.5: BlueJ - Object bench.</strong></caption>
+
 ![Alt text](/Modules/Images/1-5_BlueJ_ObjectBench.png)
  
-Figure 1.5: BlueJ - Object bench.
+
 
 When you double-click on one of the yellow classes, it will bring up your code editor. This is source code that defines your classes. You can have multiple classes open within the editor. Each one will have its own tab across the top. 
 
+<caption><strong>Figure 1.6: BlueJ - Code editor.</strong></caption>
+
 ![Alt text](/Modules/Images/1-6_BlueJ_CodeEditor.png)
  
-Figure 1.6: BlueJ - Code editor.
+
 
 You'll notice on the left-hand side of the editor there are line numbers. This helps give you an easy way to reference statements within your code when discussing your code with other programmers. By default, this is turned off. To turn the line number display on, go to the main window, select 'Tools', then 'Preferences' (Figure 1.7) Another window will be displayed with user preferences. Make sure that the "Display line numbers" option is selected (Figure 1.8).
  
+<caption><strong>Figure 1.7: BlueJ - User preference menu option.</strong></caption>
+
 ![Alt text](/Modules/Images/1-7_BlueJ_UserPreferenceMenuOption.png)
  
-Figure 1.7: BlueJ - User preference menu option.
+
+
+<caption><strong>Figure 1.8: BlueJ - "Display line numbers" option.</strong></caption>
 
 ![Alt text](/Modules/Images/1-8_BlueJ_DisplayLineNumber.png)
 
-Figure 1.8: BlueJ - "Display line numbers" option.
+
 
 Back in our code editor you'll notice that any changes made, whether it's adding, deleting, or modifying code, will be shown as not compiled. We know this because of the grey color behind the line numbers.
 
+<caption><strong>Figure 1.9: BlueJ - Non-compiled code in the code editor.</strong></caption>
+
 ![Alt text](/Modules/Images/1-9_BlueJ_EditorNonCompile.png)
  
-Figure 1.9: BlueJ - Non-compiled code in the code editor.
+
 
 In addition, if we go back to the main window we'll see that both the Cookie class and the YummyBytesBakery class have grey slashes across it. This is another indicator saying that these two particular classes have not been compiled. Once we select the 'Compile' button on the left-hand side of the main window, those classes will return back to their solid, yellow color, and your application will be able to run.
 
+<caption><strong>Figure 1.10: BlueJ - Non-compiled code in the main window.</strong></caption>
+
 ![Alt text](/Modules/Images/1-10_BlueJ_MainNonCompile.png) 
 
-Figure 1.10: BlueJ - Non-compiled code in the main window.
+
 
 If you run into a situation where you have a syntax error, BlueJ will notify you in four areas in the code editor. First, the class tab in the code editor will be underlined in red. Next, on the left-hand side, BlueJ will highlight the line number where the error has occurred. On that line it will also underline the area where the error starts. In this case it's at the very end of line 18. Finally, in the bottom right-hand corner you will see an error message. This tells you how many errors have occurred within this particular file. If you click on the red error message, it will take you to where the first error has occurred. This is very helpful especially when working with large classes.
 
+<caption><strong>Figure 1.11: BlueJ - Syntax error notifications in the code editor.</strong></caption>
+
 ![Alt text](/Modules/Images/1-11_BlueJ_EditorSyntaxError.png)
  
-Figure 1.11: BlueJ - Syntax error notifications in the code editor.
+
 
 Back in the main editor, we can see that our Cookie class has a syntax error within it. This is shown by the red, crosshatched appearance. Once we correct those errors it will turn back to grey slashes meaning that it's not compiled. Then after it's compiled it will return back to its solid yellow color.
 
+<caption><strong>Figure 1.12: BlueJ Syntax error notification in the main window.</strong></caption>
+
 ![Alt text](/Modules/Images/1-12_BlueJ_MainSyntaxError.png)
  
-Figure 1.12: BlueJ Syntax error notification in the main window.
+
 
 Throughout the text we will be utilizing two additional windows. Those are the debugger and the terminal. If for any reason you do not see them, you can go to the 'View' menu and select whichever window you need to see.
 
+<caption><strong>Figure 1.13: BlueJ - View menu options.</strong></caption>
+
 ![Alt text](/Modules/Images/1-13_BlueJ_ViewMenu.png)
  
-Figure 1.13: BlueJ - View menu options.
+
 
 
 
