@@ -389,7 +389,7 @@ $$x = 5$$
 
 $$2x + 3x = 25$$
 
-The first equation is assigning $x$ the value of 5. We can then substitute in 5 at any location where $x$ is used in the second equation and get a valid result. Variables in programming act in a similar manner.
+The first equation is assigning x the value of 5. We can then substitute in 5 at any location where x is used in the second equation and get a valid result. Variables in programming act in a similar manner.
 
 For this example, we'll create a String variable called *firstName*. 
 
