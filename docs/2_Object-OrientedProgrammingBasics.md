@@ -753,3 +753,36 @@ These are the only locations where you are permitted to assign a value to a cons
 - Single-Line Comments
 - State
 - This
+
+# Review Questions
+1.	What is an object in the context of programming?
+2.	What is a class in programming?
+3.	What is an instance in programming?
+4.	What is the syntax for defining a class in Java?
+5.	What are keywords or reserved words in Java?
+6.	How should multi-word class names be formatted?
+7.	How do you write a single-line comment in Java?
+8.	What are some uses for single-line comments in programming?
+9.	How do you write a multi-line comment in Java?
+10.	Why might you choose to use a multi-line comment over several single-line comments?
+11.	What does JavaDoc allow you to do for your class?
+12.	What are the three components needed to declare an instance variable?
+13.	What is the difference between public and private visibility modifiers?
+14.	Why is it generally recommended to use private for instance variables?
+15.	What are primitive data types in Java, and how many are there?
+16.	What are object data types in Java, and how do they differ from primitive data types?
+17.	Why is it important to use descriptive names for variables?
+18.	What is the purpose of a constructor in a class?
+19.	What is the syntax to define a constructor?
+20.	How do you assign a value to a variable in Java?
+21.	What happens if you try to use an object data type variable that has not been initialized?
+22.	What is overloading?
+23.	How do you differentiate between overloaded constructors?
+24.	What is the difference between local variables and instance variables?
+25.	What is the scope of a local variable declared within a constructor?
+26.	What is the purpose of the ‘this’ keyword in Java?
+27.	How does the ‘this’ keyword resolve naming conflicts between instance variables and parameters?
+28.	What is the state of an instance?
+29.	Why is knowing the state of an instance important for debugging?
+30.	What is a constant variable in Java, and how is it declared?
+31.	What naming conventions should be used for constants?
