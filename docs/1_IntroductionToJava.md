@@ -16,7 +16,7 @@ The JVM is the part of Java that is installed on the computer's operating system
 
 <caption><strong>Figure 1.1: Java Ecosystem</strong></caption>
 
-![Diagram of the Java Development Kit (JDK) architecture containing the Java Runtime Environment (JRE) and Development Tools, with JRE further containing the Java Virtual Machine (JVM) and Libraries.](/docs/images/1-1_JavaEcosystem.png)
+![Diagram of the Java Development Kit (JDK) architecture containing the Java Runtime Environment (JRE) and Development Tools, with JRE further containing the Java Virtual Machine (JVM) and Libraries.](/docs/assets/images/1-1_JavaEcosystem.png)
 
 
 
@@ -72,7 +72,7 @@ The integrated development environment (IDE) that we'll use throughout this text
 
 <caption><strong>Figure 1.2: BlueJ - Main Window.</strong></caption>
 
-![BlueJ IDE window displaying a class diagram with classes Cookie, Muffin, Doughnut, YummyBytesBakery, and an enum DietaryOption with dashed dependency arrows pointing between them.](/docs/images/1-2_BlueJ_MainWindow.png)
+![BlueJ IDE window displaying a class diagram with classes Cookie, Muffin, Doughnut, YummyBytesBakery, and an enum DietaryOption with dashed dependency arrows pointing between them.](/docs/assets/images/1-2_BlueJ_MainWindow.png)
  
 
 
@@ -80,7 +80,7 @@ The main area of BlueJ shows the components of your application. For this text w
 
 <caption><strong>Figure 1.3: BlueJ - Classes.</strong></caption>
 
-![Screenshot of the BlueJ IDE showing a class diagram for the 'YummyBytesBakery' project. Five tan class boxes are visible: Cookie (highlighted with a thick red square), Muffin, Doughnut, YummyBytesBakery, and an enum named DietaryOption. Dashed arrows connect the classes to indicate dependencies.](/docs/images/1-3_BlueJ_Classes.png)
+![Screenshot of the BlueJ IDE showing a class diagram for the 'YummyBytesBakery' project. Five tan class boxes are visible: Cookie (highlighted with a thick red square), Muffin, Doughnut, YummyBytesBakery, and an enum named DietaryOption. Dashed arrows connect the classes to indicate dependencies.](/docs/assets/images/1-3_BlueJ_Classes.png)
  
 
 
@@ -88,7 +88,7 @@ On the left-hand side you'll see buttons that will allow you to create new class
 
 <caption><strong>Figure 1.4: BlueJ - New classes and compile.</strong></caption>
 
-![Screenshot of the BlueJ IDE interface showing a class diagram for the 'YummyBytesBakery' project. A thick red rectangle on the upper-left sidebar highlights three vertical control buttons: 'New Class...', a right-pointing arrow button, and 'Compile'.](/docs/images/1-4_BlueJ_NewClassesCompile.png)
+![Screenshot of the BlueJ IDE interface showing a class diagram for the 'YummyBytesBakery' project. A thick red rectangle on the upper-left sidebar highlights three vertical control buttons: 'New Class...', a right-pointing arrow button, and 'Compile'.](/docs/assets/images/1-4_BlueJ_NewClassesCompile.png)
  
 
 
@@ -96,7 +96,7 @@ At the bottom of the main window is the object bench. Every instance of our clas
 
 <caption><strong>Figure 1.5: BlueJ - Object bench.</strong></caption>
 
-![Screenshot of the BlueJ IDE interface showing a class diagram for the 'YummyBytesBakery' project. A red rectangle highlights the Object Bench—the empty horizontal grey area across the bottom of the main diagram pane where instantiated objects are stored.](/docs/images/1-5_BlueJ_ObjectBench.png)
+![Screenshot of the BlueJ IDE interface showing a class diagram for the 'YummyBytesBakery' project. A red rectangle highlights the Object Bench—the empty horizontal grey area across the bottom of the main diagram pane where instantiated objects are stored.](/docs/assets/images/1-5_BlueJ_ObjectBench.png)
  
 
 
@@ -104,7 +104,7 @@ When you double-click on one of the yellow classes, it will bring up your code e
 
 <caption><strong>Figure 1.6: BlueJ - Code editor.</strong></caption>
 
-![BlueJ code editor showing Java source code for the YummyBytesBakery class, including import statements, class Javadoc comments, and field declarations.](/docs/images/1-6_BlueJ_CodeEditor.png)
+![BlueJ code editor showing Java source code for the YummyBytesBakery class, including import statements, class Javadoc comments, and field declarations.](/docs/assets/images/1-6_BlueJ_CodeEditor.png)
  
 
 
@@ -112,13 +112,13 @@ You'll notice on the left-hand side of the editor there are line numbers. This h
  
 <caption><strong>Figure 1.7: BlueJ - User preference menu option.</strong></caption>
 
-![Screenshot of the BlueJ IDE interface for the YummyBytesBakery project. The 'Tools' menu is open in the top menu bar, with the 'Preferences... (Ctrl+,)' option highlighted in blue near the bottom of the dropdown list.](/docs/images/1-7_BlueJ_UserPreferenceMenuOption.png)
+![Screenshot of the BlueJ IDE interface for the YummyBytesBakery project. The 'Tools' menu is open in the top menu bar, with the 'Preferences... (Ctrl+,)' option highlighted in blue near the bottom of the dropdown list.](/docs/assets/images/1-7_BlueJ_UserPreferenceMenuOption.png)
  
 
 
 <caption><strong>Figure 1.8: BlueJ - "Display line numbers" option.</strong></caption>
 
-![Screenshot of the BlueJ Preferences dialog box open to the Editor tab. Inside the 'Java editor settings' section, a red box highlights the checked checkbox labeled 'Display line numbers'.](/docs/images/1-8_BlueJ_DisplayLineNumber.png)
+![Screenshot of the BlueJ Preferences dialog box open to the Editor tab. Inside the 'Java editor settings' section, a red box highlights the checked checkbox labeled 'Display line numbers'.](/docs/assets/images/1-8_BlueJ_DisplayLineNumber.png)
 
 
 
@@ -126,7 +126,7 @@ Back in our code editor you'll notice that any changes made, whether it's adding
 
 <caption><strong>Figure 1.9: BlueJ - Non-compiled code in the code editor.</strong></caption>
 
-![BlueJ code editor showing Java source code for the YummyBytesBakery class with uncompiled changes, indicated by the vertical grey bar on the left-hand side.](/docs/images/1-9_BlueJ_EditorNonCompile.png)
+![BlueJ code editor showing Java source code for the YummyBytesBakery class with uncompiled changes, indicated by the vertical grey bar on the left-hand side.](/docs/assets/images/1-9_BlueJ_EditorNonCompile.png)
  
 
 
@@ -134,7 +134,7 @@ In addition, if we go back to the main window we'll see that both the Cookie cla
 
 <caption><strong>Figure 1.10: BlueJ - Non-compiled code in the main window.</strong></caption>
 
-![Screenshot of the BlueJ IDE interface displaying the class diagram for the 'YummyBytesBakery' project. The 'Cookie' and 'YummyBytesBakery' class boxes are filled with diagonal striped patterns, indicating that they contain uncompiled changes.](/docs/images/1-10_BlueJ_MainNonCompile.png) 
+![Screenshot of the BlueJ IDE interface displaying the class diagram for the 'YummyBytesBakery' project. The 'Cookie' and 'YummyBytesBakery' class boxes are filled with diagonal striped patterns, indicating that they contain uncompiled changes.](/docs/assets/images/1-10_BlueJ_MainNonCompile.png) 
 
 
 
@@ -142,7 +142,7 @@ If you run into a situation where you have a syntax error, BlueJ will notify you
 
 <caption><strong>Figure 1.11: BlueJ - Syntax error notifications in the code editor.</strong></caption>
 
-![BlueJ code editor showing Java source code for the YummyBytesBakery class with a syntax error on line 18 highlighted in red.](/docs/images/1-11_BlueJ_EditorSyntaxError.png)
+![BlueJ code editor showing Java source code for the YummyBytesBakery class with a syntax error on line 18 highlighted in red.](/docs/assets/images/1-11_BlueJ_EditorSyntaxError.png)
  
 
 
@@ -150,7 +150,7 @@ Back in the main editor, we can see that our Cookie class has a syntax error wit
 
 <caption><strong>Figure 1.12: BlueJ Syntax error notification in the main window.</strong></caption>
 
-![BlueJ IDE class diagram view showing the Cookie class highlighted with a red cross-hatch pattern, indicating a syntax error prevents it from compiling.](/docs/images/1-12_BlueJ_MainSyntaxError.png)
+![BlueJ IDE class diagram view showing the Cookie class highlighted with a red cross-hatch pattern, indicating a syntax error prevents it from compiling.](/docs/assets/images/1-12_BlueJ_MainSyntaxError.png)
  
 
 
@@ -158,7 +158,7 @@ Throughout the text we will be utilizing two additional windows. Those are the d
 
 <caption><strong>Figure 1.13: BlueJ - View menu options.</strong></caption>
 
-![BlueJ IDE window showing the View menu opened with options like Show Uses, Show Inheritance, Show Debugger, and Show Terminal.](/docs/images/1-13_BlueJ_ViewMenu.png)
+![BlueJ IDE window showing the View menu opened with options like Show Uses, Show Inheritance, Show Debugger, and Show Terminal.](/docs/images/assets/1-13_BlueJ_ViewMenu.png)
  
 
 
