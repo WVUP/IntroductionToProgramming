@@ -1,4 +1,4 @@
-# Yummy Bytes Bakery - Assignment
+# Yummy Bytes Bakery - Module 2 Assignment
 
 ## Cookie Class
 1.	Create a class called Cookie with the following instance variables and data types (in parentheses):
