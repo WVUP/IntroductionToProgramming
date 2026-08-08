@@ -15,8 +15,38 @@
 - [Scanner](https://wvup.github.io/IntroductionToProgramming/app3_Scanner)
 - [Enumerated Types](https://wvup.github.io/IntroductionToProgramming/app4_EnumeratedTypes)
 
+---
+
 ## Labs
+### Yummy Bytes Bakery
+- [Module 2]()
+- [Module 3]()
+- [Module 4]()
+- [Module 5]()
+- [Module 6]()
+- [Module 7]()
+
+### Fuzzy Bytes Pet Adoption
+- [Module 2]()
+- [Module 3]()
+- [Module 4]()
+- [Module 5]()
+- [Module 6]()
+- [Module 7]()
 
 ## Assignments
 ### Yummy Bytes Bakery
 - [Module 2](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_2) 
+- [Module 3]()
+- [Module 4]()
+- [Module 5]()
+- [Module 6]()
+- [Module 7]()
+
+### Fuzzy Bytes Pet Adoption
+- [Module 2]()
+- [Module 3]()
+- [Module 4]()
+- [Module 5]()
+- [Module 6]()
+- [Module 7]() 
