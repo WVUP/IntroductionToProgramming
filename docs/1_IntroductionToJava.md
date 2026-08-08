@@ -48,12 +48,12 @@ Object-Oriented programming is one of the four programming paradigms (Table 1.1)
 ## Language Charateristics
 All programming languages share a few key characteristics, including Java.  These are:
 
-- Keywords - Reserved words with predefined meanings in the language (e.g., "if", "while", "class").
-- Data Types - Specifications for different kinds of data (e.g., integers, strings, booleans).
-- Variables - Named storage locations for data.
-- Operators - Symbols that tell the compiler to perform specific mathematical or logical manipulations.
-- Control Structures - Mechanisms that control the flow of execution (e.g., loops, conditionals).
-- Methods - Reusable blocks of code that perform specific tasks.
+- ***Keywords*** - Reserved words with predefined meanings in the language (e.g., "if", "while", "class").
+- ***Data Types*** - Specifications for different kinds of data (e.g., integers, strings, booleans).
+- ***Variables*** - Named storage locations for data.
+- ***Operators*** - Symbols that tell the compiler to perform specific mathematical or logical manipulations.
+- ***Control Structures*** - Mechanisms that control the flow of execution (e.g., loops, conditionals).
+- ***Methods*** - Reusable blocks of code that perform specific tasks.
 
 This means that learning your first programming language is often very challenging, because all these concepts are new.  Learning a second or third programming language is much easier because you already know these concepts and now are mostly learning the syntax and rules of the second language.   
 
