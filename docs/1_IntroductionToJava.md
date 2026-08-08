@@ -143,7 +143,7 @@ If you run into a situation where you have a syntax error, BlueJ will notify you
 
 <caption><strong>Figure 1.11: BlueJ - Syntax error notifications in the code editor.</strong></caption>
 
-![BlueJ code editor showing Java source code for the YummyBytesBakery class with a syntax error on line 18 highlighted in red.](/docs/assets/1-11_BlueJ_EditorSyntaxError.png)
+![BlueJ code editor showing Java source code for the YummyBytesBakery class with a syntax error on line 18 highlighted in red.](/assets/1-11_BlueJ_EditorSyntaxError.png)
  
 
 
