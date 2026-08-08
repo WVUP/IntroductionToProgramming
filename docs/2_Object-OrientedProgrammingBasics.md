@@ -19,13 +19,10 @@ Before we start getting into the technical details and how to write the code for
 ## Objects
 An architect is looking to build a new housing development. They generally start out with some sort of conceptual design. This is our object. An ***object***, in the context of programming, is a person, place, thing, or idea that we want to replicate in a digital format. In our case, the architect wants to build a house. In order to do this, they will need to create a set of instructions so that the construction company has something to build from.
 
-
-<div align="center">
 <caption><strong>Figure 2.1: "House" by Jason Pratt is licensed under CC BY 2.0.</strong></caption>
 
 ![Exterior view of a two-story dark red brick Craftsman-style house with a covered front porch, white trim, and a small front yard.](./assets/2-1_House.jpg)
 
-</div>
 
 ## Classes
 The blueprints that are developed by the architect give details as to the number of rooms the house will have, how large each of the rooms should be, or what color siding it should have. All of the characteristics of the house are getting written inside of this blueprint.
@@ -33,24 +30,20 @@ The blueprints that are developed by the architect give details as to the number
 From a programming perspective, this blueprint is a ***class***. It's a series of instructions that the application can use to build our digital objects. It contains all of the characteristics of our object, as well as a series of actions that our object can perform.
 
 
-<div align="center">
 <caption><strong>Figure 2.2: "House Plans: Ground Floor" by Fugue is licensed under CC BY-SA 2.0.</strong></caption>
 
 ![Architectural floor plan labeled showing a residential layout with a kitchen, TV corner, living room, dining area, central entrance hall, laundry room, and bathroom.](./assets/2-2_Blueprint.jpg)
 
-</div>
 
 
 ## Instances
 Let's say the construction company builds five houses from these blueprints. As people start buying and moving into those houses, they will add their own spin to it. They will paint the rooms. They will start decorating, and store their stuff in the closets. They will make the house unique. 
 
 
-<div align="center">
 <caption><strong>Figure 2.3: "Little Neighborhood" by Rachel Elaine. is licensed under CC BY 2.0.</strong></caption>
 
 ![High-angle aerial photograph of a suburban residential neighborhood featuring rows of multi-unit townhomes, green lawns, winding streets, and carports.](./assets/2-3_Neighborhood.jpg)
 
-</div>
 
 From a programming perspective, this individual house is known as an ***instance***. An instance is a digital representation of the class, or blueprint, that holds all of the distinct information and data for the application to use. Even though there are multiple object iterations made from the class, each one is distinct from another. 
 
@@ -258,20 +251,16 @@ public class Student
 The generated Javadoc file for the class with our comments highlighted is shown in Figure 2.4. To view this in BlueJ, click on the dropdown box in the top right of the code editor and select 'Documentation' (Figure 2.5).
 
  
-<div align="center">
 <caption><strong>Figure 2.4: Code documentation generated using Javadoc</strong></caption>
 
 ![Javadoc documentation page for the Java class 'Student', showing class inheritance from java.lang.Object, description, version 1.0, and author Jane Doe.](./assets/2-4_CodeDocumentationGenerated.png)
 
-</div>
 
 
-<div align="center">
 <caption><strong>Figure 2.5: Code documentation option within code editor.</strong></caption>
 
 ![A drop-down menu in a software interface showing the options 'Source Code' (selected) and 'Documentation'.](./assets/2-5_EditorDocumentationMenu.png)
 
-</div>
 
  
 
@@ -297,24 +286,20 @@ public class Instructor
 If the Student class has anything that is declared public, the Instructor class can access it. This includes adding, modifying, or deleting any values that are stored within the Student class.
 
 
-<div align="center">
 <caption><strong>Figure 2.6: Encapsulation - public interaction with an external class.</strong></caption>
 
 ![Diagram showing an arrow labeled 'Available to Instructor class' pointing from an Instructor class box to a 'public' component inside a Student class box.](./assets/2-6_EncapsulationPublic.png)
 
-</div>
 
 
 ### Private
 ***private***, on the other hand, only allows the current class to access information contained within it. External classes cannot see or use it. 
 
 
-<div align="center">
 <caption><strong>Figure 2.7: Encapsulation - private interaction with an external class.</strong></caption>
 
 ![Diagram showing class access control: a solid arrow labeled 'Available to Instructor class' points to a 'public' component, while a dashed arrow labeled 'Hidden from Instructor class' points to a 'private' component inside the Student class.](./assets/2-7_EncapsulationPrivate.png)
 
-</div>
 
 The main reason why you would want to "hide" something from another class is to make sure it cannot be directly accessed or modified. You'll see why this is important in the next module when discussing updating and retrieving data through the use of methods.
 
@@ -608,12 +593,10 @@ The BlueJ IDE shows the scope of each component within the class shown in Figure
 Declaring local variables in a code block are similar to instance variables, but they lack a visibility modifier. Since they only exist within the current code block, visibility modifiers are not necessary. An example of this is in the default constructor on line 9. Local variables, not parameters, must also be initialized before they can be used.
 
 
-<div align="center">
 <caption><strong>Figure 2.8: Local variables and scope.</strong></caption>
 
 ![BlueJ editor showing Java code for a Student class with scope coloring highlighting the class level in light green, constructor scopes in yellow, and inner statement blocks in white](./assets/2-8_LocalVariableScope.png)
 
-</div>
 
 
 ### 'this' Keyword
@@ -638,46 +621,38 @@ public Student(String firstName)
 There's a catch though. When you have a parameter the same as your instance variable, it causes confusion in the compiler because of how it looks up variable name references. Once the compiler comes across any variable name, in our case *firstName*, it first looks locally to see if a variable of that name has been declared (Figure 2.9). If one is available, the compiler uses it. 
 
 
-<div align="center">
 <caption><strong>Figure 2.9: Variable lookup - step one.</strong></caption>
 
 ![Java code snippet for class Student showing a red arrow pointing from the line 'firstName = newFirstName;' up to the constructor parameter 'newFirstName' in 'public Student(String newFirstName)'.](./assets/2-9_LookupOne.png)
 
-</div>
 
 
 If the compiler doesn't find a local declaration, then expand its search to the instance variables (Figure 2.10). 
 
 
-<div align="center">
 <caption><strong>Figure 2.10: Variable lookup - step two.</strong></caption>
 
 ![Java code snippet for class Student showing a red arrow pointing from line 15 ('firstName = newFirstName;') up to line 4 where the instance variable 'private String firstName;' is declared.](./assets/2-10_LookupTwo.png)
 
-</div>
 
 This lookup process occurs every time a variable is used. From the example with different instance and parameter names, we can see that the variables would be referenced correctly. The new information being pulled in from the parameter will be assigned to the instance variable. 
 
 What happens when the names are the same? The same lookup process occurs, but each side of the assignment statement is referencing the same parameter Figure 2.11). The value of the parameter is being accessed and modified. The instance variable is ignored completely. 
 
 
-<div align="center">
 <caption><strong>Figure 2.11: Variable lookup - conflict with variables of the same name.</strong></caption>
 
 ![Java code snippet showing shadowing in a Student constructor, with two red arrows pointing from both uses of 'firstName' in 'firstName = firstName;' up to the parameter 'firstName' in the constructor signature.](./assets/2-11_LookupConflict.png)
 
-</div>
 
 
 We are able to bypass the first step of the lookup process and force the compiler to look at the instance variables by using the `this` keyword. If we modify our constructor and add the `this` keyword to the left side of our assignment statement, the compiler knows to skip the local lookup and immediately go to the instance variables (Figure 2.12).
 
 
-<div align="center">
 <caption><strong>Figure 2.12: Variable lookup - using 'this' keyword to bypass variable lookup step one.</strong></caption>
 
 ![Java code snippet using 'this' keyword to resolve variable shadowing. A red arrow points from 'this.firstName' to the instance variable on line 4, and a second red arrow points from the assignment 'firstName' up to the constructor parameter on line 7.](./assets/2-12_LookupThis.png)
 
-</div>
 
 
 ## State
