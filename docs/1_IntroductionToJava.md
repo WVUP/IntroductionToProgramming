@@ -17,7 +17,7 @@ The JVM is the part of Java that is installed on the computer's operating system
 
 <caption><strong>Figure 1.1: Java Ecosystem</strong></caption>
 
-![Diagram of the Java Development Kit (JDK) architecture containing the Java Runtime Environment (JRE) and Development Tools, with JRE further containing the Java Virtual Machine (JVM) and Libraries.](/docs/assets/1-1_JavaEcosystem.png)
+![Diagram of the Java Development Kit (JDK) architecture containing the Java Runtime Environment (JRE) and Development Tools, with JRE further containing the Java Virtual Machine (JVM) and Libraries.](/assets/1-1_JavaEcosystem.png)
 
 
 
