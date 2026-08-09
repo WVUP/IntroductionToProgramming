@@ -19,12 +19,12 @@
 
 ## Labs
 ### Yummy Bytes Bakery
-- [Module 2]()
-- [Module 3]()
-- [Module 4]()
-- [Module 5]()
-- [Module 6]()
-- [Module 7]()
+- [Module 2](https://wvup.github.io/IntroductionToProgramming/labs/YummyBytesBakery_Lab_2) 
+- [Module 3](https://wvup.github.io/IntroductionToProgramming/labs/YummyBytesBakery_Lab_3)
+- [Module 4](https://wvup.github.io/IntroductionToProgramming/labs/YummyBytesBakery_Lab_4)
+- [Module 5](https://wvup.github.io/IntroductionToProgramming/labs/YummyBytesBakery_Lab_5)
+- [Module 6](https://wvup.github.io/IntroductionToProgramming/labs/YummyBytesBakery_Lab_6)
+- [Module 7](https://wvup.github.io/IntroductionToProgramming/labs/YummyBytesBakery_Lab_7)
 
 ### Fuzzy Bytes Pet Adoption
 - [Module 2]()
@@ -39,11 +39,11 @@
 ## Assignments
 ### Yummy Bytes Bakery
 - [Module 2](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_2) 
-- [Module 3]()
-- [Module 4]()
-- [Module 5]()
-- [Module 6]()
-- [Module 7]()
+- [Module 3](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_3)
+- [Module 4](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_4)
+- [Module 5](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_5)
+- [Module 6](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_6)
+- [Module 7](https://wvup.github.io/IntroductionToProgramming/assignments/YummyBytesBakery_Assign_7)
 
 ### Fuzzy Bytes Pet Adoption
 - [Module 2]()
