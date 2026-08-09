@@ -727,7 +727,7 @@ These are the only locations where you are permitted to assign a value to a cons
 
 
 
-# KEY TERMS
+# Key Terms
 - Class
 - Code Block
 - Comments
