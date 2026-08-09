@@ -1,5 +1,7 @@
 # Introduction to Programming
 
+- [Test Code](https://wvup.github.io/IntroductionToProgramming/TestCode)
+
 ## Modules
 - [Introduction to Java](https://wvup.github.io/IntroductionToProgramming/1_IntroductionToJava)
 - [Object-Oriented Programming Basics](https://wvup.github.io/IntroductionToProgramming/2_Object-OrientedProgrammingBasics)
