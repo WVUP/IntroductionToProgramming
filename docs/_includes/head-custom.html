@@ -12,3 +12,23 @@
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 
 </script>
+
+<!-- Highlight.js -->
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  hljs.highlightAll();
+  
+  // Add line numbers
+  document.querySelectorAll('pre code').forEach((block) => {
+    const lines = block.innerHTML.split('\n');
+    const numberedLines = lines.map((line, index) => 
+      `<span class="line-number">${index + 1}</span>${line}`
+    );
+    block.innerHTML = numberedLines.join('\n');
+  });
+});
+</script>

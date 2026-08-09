@@ -8,9 +8,3 @@ kramdown:
   input: GFM                 # Uses GitHub Flavored Markdown
   auto_ids: true             # Automatically generates header IDs for anchor links
   hard_wrap: false
-
-markup:
-  highlight:
-    lineNos: true
-    lineNumbersInTable: true
-    style: github
