@@ -56,13 +56,13 @@ Now that we know the difference between an object, class, and instance, let's st
 There are several components that are within a class. Starting out, we are going to deal with four sections: instance variables, constructors, getters and setters, and all other methods. In this module we will focus on the first two sections.
 
 ```java
-public class Student
-{
-    //instance variables
-    //constructor(s)
-    //getters and setters
-    //"other" methods
-}
+ public class Student
+ {
+     //instance variables
+     //constructor(s)
+     //getters and setters
+     //"other" methods
+ }
 ```
 
 The class header consists of the keywords public and class, and a name. The public keyword is a visibility modifier. It just means that any class within the application can see it. We'll elaborate on this a little more in the next module.
@@ -82,19 +82,19 @@ The rationale behind this is to provide a clear theme for the class. This will a
 ***Naming conventions*** suggest that your class name should be capitalized or Pascal case. That way, programmers reading your code will quickly associate the name with a class. For the course management application, we would create the class header as such.
 
 ```java
-public class Student
-{
-    ...
-}
+ public class Student
+ {
+     ...
+ }
 ```
 
 If you have a class name made up of multiple words, such as a class defining a college professor, each word would be capitalized. This is for legibility.
 
 ```java
-public class CollegeProfessor
-{
-    ...
-}
+ public class CollegeProfessor
+ {
+     ...
+ }
 ```
 
 You'll notice that in each example there is a set of curly brackets directly after that class heading. This is a ***code block***. In Java, a code block contains a set of executable statements. The brackets help break up a large source code file into manageable chunks, so you can see what's related to what. In our case, everything that is going to belong to the class definition is going to be directly after the class header.
@@ -108,19 +108,19 @@ One of the more useful, but often forgotten, things that we can do within our co
 ***Single-line comments***, which use two forward slashes `//`, means anything after this point to the very end of the line is going to be deemed a comment. They are not considered part of the application's functionality.
 
 ```java
-public class Student
-{
-	//This is an example of a single line comment
-}
+ public class Student
+ { 
+ 	//This is an example of a single line comment
+ }
 ```
 
 Single-line comments can exist on their own line like the above example. It can also be included at the end of an executable line of code
 
 ```java
-public class Student //Class header is compiled. Comment is ignored.
-{
-	...
-}
+ public class Student //Class header is compiled. Comment is ignored.
+ { 
+ 	...
+ }
 ```
 
 Comments have a wide variety of uses in programming.
@@ -132,10 +132,10 @@ Comments have a wide variety of uses in programming.
 Below is an example of how each of these types of comments can be used. 
 
 ```java
-//Student class: created June 1, 2024
-public class Student
-{
-	//instance variables (component description)
+ //Student class: created June 1, 2024
+ public class Student
+ { 
+  	//instance variables (component description) 
 	private String firstName;
 	private String lastName;
 
@@ -163,7 +163,7 @@ public class Student
 		System.out.println("~*~*~*~ " + tempName + " ~*~*~*~");
 		//WHY DOES THIS EXIST!?!?!?!
 	}
-}
+ }  
 ``` 
 
 Even though it may seem ridiculous to describe what is happening with a section of code instead of just reading it, it makes a massive difference when you inherit a large-scale application. Not only do you get a brief summary of what a section of code is trying to accomplish, you also get to know what another programmer was thinking at that point in time.
@@ -174,26 +174,26 @@ Even though it may seem ridiculous to describe what is happening with a section 
 The syntax used to declare a multi-line comment has a start `/*` and an end `*/`. Everything written between those symbols is deemed a comment and will be ignored by the compiler. As the name suggests this comment can start on one line and end on a lower line, and all text contained between them will be part of the comment. Below is a code snippet from the single-line comments. While there is nothing wrong with using single-line comments over multiple lines, we can clean it up for ease of readability.
 
 ```java
-//This returns a student's full name in last, first order
-//EX: Smith, John
-public String getFullName()
-{
+ //This returns a student's full name in last, first order
+ //EX: Smith, John
+ public String getFullName()
+ {
     return lastName + " " + firstName;
-}
+ }
 ```
 
 
 If we were to convert this example's single-line comment to multi-line it would look like this.
 
 ```java
-/* 
- This returns a student's full name in last, first order
- EX: Smith, John
-*/
-public String getFullName()
-{
+ /* 
+  This returns a student's full name in last, first order
+  EX: Smith, John
+ */
+ public String getFullName()
+ {
     return lastName + " " + firstName;
-}
+ }
 ```
 
 ## Javadoc - Class Level
@@ -217,14 +217,14 @@ The `@version` tag denotes what version, or update, this class is. How the versi
 Another version convention is date based. For example, a software team tracks code changes based on the update's release date. The most recent release was on June 12, 2024. The team uses a version format of YY-MM-DD. Therefore, the version number for this update is 24-06-12.
 
 ```java
-/**
-* Represents a student with a first name and a last name.
-*
-* @author Jane Doe
-* @version 1.0
-*/
-public class Student
-{
+ /**
+ * Represents a student with a first name and a last name.
+ *
+ * @author Jane Doe
+ * @version 1.0
+ */
+ public class Student
+ {
 	// instance variables (component description)
  	private String firstName;
  	private String lastName;
@@ -246,7 +246,7 @@ public class Student
  	{
  		return lastName + "  " + firstName;
 	}
-}
+ }
 ```
 
 The generated Javadoc file for the class with our comments highlighted is shown in Figure 2.4. To view this in BlueJ, click on the dropdown box in the top right of the code editor and select 'Documentation' (Figure 2.5).
@@ -278,10 +278,10 @@ The first component of our instance variable declaration is its visibility, or a
 When the ***public*** attribute is used on any definition, such as our Student class definition, components within the current class and other external classes can access it. To help illustrate this we'll use the Student class and declare a second class called Instructor.
 
 ```java
-public class Instructor
-{
+ public class Instructor
+ {
 	...
-}
+ }
 ```
 
 If the Student class has anything that is declared public, the Instructor class can access it. This includes adding, modifying, or deleting any values that are stored within the Student class.
@@ -360,15 +360,15 @@ The variable names should start with a lowercase letter with each additional wor
 Now that we went over the components that make up an instance variable declaration, let's put it all together in our Student class. The format for an instance variable declaration is shown below.
 
 ```java
-//visibility datatype variableName;
-private int studentID;
+ //visibility datatype variableName;
+ private int studentID;
 ```
 
 Instance variables are declared directly after the class header. For our Student class, we will make variables to hold the student's first and last name, their GPA, what major they're in, and if they are an actively enrolled student. Each variable declaration will also show example values that can be used later.
 
 ```java
-public class Student
-{
+ public class Student
+ {
 	/*
  	    INSTANCE VARIABLES		POTENTIAL VALUES
  	*/
@@ -378,7 +378,7 @@ public class Student
  	private double gpa; 		    //3.75
 	private String major; 		    //"Computer Science"
   	private boolean isActiveStudent;    //true
-}
+ }
 ```
 
 
@@ -390,10 +390,10 @@ A ***constructor*** is in charge of taking the instruction defined in a class an
 Default constructors are used to give instance variables default starting values upon an instance's creation. All constructors are public and have the same name as the class (case-sensitivity is in play here as well). Notice that at the end of the constructor header there is a set of parentheses. This is where you will create your formal parameter list where you can "ask" for additional information to use within the constructor. Since we want to define what value each instance variable is starting out with, we do not need to list anything within the parentheses. The parentheses are required to be there even if they contain nothing.
 
 ```java
-public Student()
-{
+ public Student()
+ {
     //instance variables are assigned values here
-}
+ }
 ```
 
 ## Assigning Values to Variables
@@ -408,13 +408,13 @@ The first equation is assigning x the value of 5. We can then substitute in 5 at
 For this example, we'll create a String variable called *firstName*. 
 
 ```java
-private String firstName; 
+ private String firstName; 
 ```
 
 This declaration gives us a location in memory to store our name. Next, we need to initialize it and give it a value. Let's say the name we want to store is "Levi". To assign this value to our variable, we use the assignment operator `=`.
 
 ```java
-firstName = "Levi";
+ firstName = "Levi";
 ```
 
 There are a few things to note with this statement. First, notice how the data type was left out. This is because once a variable has been declared with a data type, it does not need to be redeclared. Otherwise, we'll run into issues later when processing the data.
@@ -427,27 +427,27 @@ Lastly, this is a stand-alone, executable statement, so we end with a semicolon 
 
 
 ### How Can We Use This Data?
-Just like our algebra equation, every time our program comes across the variable firstName, the application will read the saved value from the computer's memory. The application will, in a way, "replace" the variable name with the retrieved data. Below is an example of how it works from a high-level perspective. 
+Just like our algebra equation, every time our program comes across the variable *firstName*, the application will read the saved value from the computer's memory. The application will, in a way, "replace" the variable name with the retrieved data. Below is an example of how it works from a high-level perspective. 
 
 ```java
-//declaring the variable 
-private String firstName; 
+ //declaring the variable 
+ private String firstName; 
   
-//assigning data to the variable 
-firstName = "Levi"; 
+ //assigning data to the variable 
+ firstName = "Levi"; 
  	
-//value of firstName retrieved from memory
-System.out.println("hello "+ firstName);  
+ //value of firstName retrieved from memory
+ System.out.println("hello "+ firstName);  
 		
-//the application "replaces" the variable with its value and
-//prints the statement to the console
-System.out.println("hello " + "Levi"); 
+ //the application "replaces" the variable with its value and
+ //prints the statement to the console
+ System.out.println("hello " + "Levi"); 
 ```
 
 <caption><strong>Console Output:</strong></caption> 
 
 ```
-hello Levi
+ hello Levi
 ```
 
 ### null
@@ -455,27 +455,27 @@ When you are dealing with any object data type, you need to make sure that you h
 
 This is the point where null values occur. Nulls are in between points where there is space reserved for data, but there's no structure to save the data in. Likewise, with the house. We have a space reserved for it, but we can't start moving furniture in yet. While this can be used to our advantage later on, this causes a problem when we try to use the variable.
 
-Using the previous code example, we'll comment out the *firstName* assignment statement. After executing this code snippet, we see that there is an issue with the output.
+Using the previous code example, we'll comment out the *firstName* assignment statement on line 5. After executing this code snippet, we see that there is an issue with the output.
 
 ```java
-//declaring the variable
-private String firstName;  
+ //declaring the variable
+ private String firstName;  
+ 
+ //assigning data to the variable
+ //firstName = "Levi"; 
 
-//assigning data to the variable
-//firstName = "Levi"; 
+ //application goes into memory to retrieve the assigned value 
+ System.out.println("hello "+ firstName); 
 
-//application goes into memory to retrieve the assigned value 
-System.out.println("hello "+ firstName); 
-
-//the application "replaces" the variable with its value (in this 
-//case null) and prints the statement to the console
-System.out.println("hello " + null); 
+ //the application "replaces" the variable with its value (in this 
+ //case null) and prints the statement to the console
+ System.out.println("hello " + null); 
 ```
 
 <caption><strong>Console Output:</strong></caption>
 
 ```
-hello null
+ hello null
 ```
 
 
@@ -485,23 +485,23 @@ Since we have the *firstName* variable declared, but have not yet initialized or
 We are also able to change, or modify, the value assigned to our variables. To do this, we use another assignment statement: 
 
 ```java
-//declaring the variable
-private String firstName;  
+ //declaring the variable
+ private String firstName;  
 
-//assigning data to the variable 
-firstName = "Levi"; 
-System.out.println ("hello " + firstName); //output #1 
+ //assigning data to the variable 
+ firstName = "Levi"; 
+ System.out.println ("hello " + firstName); //output #1 
 
-//changing the data assigned to the same variable
-firstName = "Bentley";  
-System.out.println(hello "+ firstName); //output #2 
+ //changing the data assigned to the same variable
+ firstName = "Bentley";  
+ System.out.println(hello "+ firstName); //output #2 
 ```
 
 <caption><strong>Console Output:</strong></caption>
 
 ```
-hello Levi
-hello Bentley
+ hello Levi
+ hello Bentley
 ```
 
 What happens to the originally assigned value, "Levi"? When a variable is assigned a new value, the old value is discarded. Whatever was assigned last is what stays. Eventually, Java's [garbage collection process](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html) will run behind the scenes and remove the discarded data from the system. The details on how the garbage collector process works is out of scope at this time due to its complexity.
@@ -510,15 +510,15 @@ What happens to the originally assigned value, "Levi"? When a variable is assign
 Going back to our original "default" constructor, we can now assign default values to our instance variables. Below are the starting values we will use for the Student class.
 
 ```java
-public Student()
-{
-	studentID = 99999;
+ public Student()
+ {
+ 	studentID = 99999;
 	firstName = "";
 	lastName = "";
 	gpa = 0.0;
 	major = "Undeclared";
 	isActiveStudent = false;
-}
+ }
 ```
 
 These starting values can be anything. Your application, its usage, and the business process its executing dictates what starting values should be used. In our case, we will always assume that a brand-new Student will be given an ID of 99999. This can be considered a dummy value which is data that would not occur during the normal usage of the application. For *firstName* and *lastName* we are using empty Strings `""`, two double quotes without spaces. These show that there is an underlying structure of a String, but nothing of note is currently being stored. This is how String is typically initialized if no starting value is available. Remember, with object data types, you cannot add, modify, or delete values without an underlying structure. We are also assuming that our new Student does not have a GPA, they have not decided what their major is, and they are currently not an actively enrolled student.
@@ -529,38 +529,38 @@ These starting values can be anything. Your application, its usage, and the busi
 When we create new instances of our class, we aren't relegated to just using a single constructor. We can have multiple constructors with various levels of customization. This is called overloading. ***Overloading*** is a way for us to create a new constructor, and in the next module new methods, using the same name, but a different parameter signature. With a default constructor, we have an empty set of parentheses, so there's no formal parameters being passed in. 
 
 ```java
-public Student()
-{
+ public Student()
+ {
 	...
-}
+ }
 ```
 
 Let's create a second constructor where we're pulling in a student's name. We'll have the same constructor name, but we will add in a new parameter. ***Parameters*** allow us to bring in additional data to use within our constructors.
 
 ```java
-public Student(String newFirstName)
-{
+ public Student(String newFirstName)
+ {
 	...
-}
+ }
 ```
 
 ## Declaring a Parameter
 Parameters are always declared within the parentheses. Just like instance variables, need to define what data type the parameter will be and a name to reference it by. If you want to pull in more values into your constructor, you can add more parameters separated by commas as shown below.
 
 ```java
-public Student(String newFName, int newStudentID, boolean activeStudent)
-{
+ public Student(String newFName, int newStudentID, boolean activeStudent)
+ {
 	...
-}
+ }
 ```
 
 ## Signatures
 The order of the data types used in the parameter list is what makes up the constructor's ***signature***. It is what makes it uniquely identifiable. Below are the three signatures of the constructors we've created so far.
 
 ```java
-public Student()
-public Student(String)
-public Student(String, int, boolean)
+ public Student()
+ public Student(String)
+ public Student(String, int, boolean)
 ```
 
 Consider the two constructors below. One has parameters asking for the student's first name and their student ID. The second is asking for their last name and student ID. The most important thing that you will need to watch out for in this situation is duplicate signatures. To us as programmers, the overloaded constructors are different in terms of context. We are asking for different names. The compiler, however, sees the constructors the same in terms of syntax.
@@ -604,19 +604,19 @@ Declaring local variables in a code block are similar to instance variables, but
 The parameters that we use in our overloaded constructor can be named in one of two ways. We can either have parameters that have a unique name that is distinguishable from its related instance variable, such as *newFirstName*. 
 
 ```java
-public Student(String newFirstName)
-{
+ public Student(String newFirstName)
+ {
 	firstName = newFirstName;
-}
+ }
 ```
 
 We can also name our parameters the same as our instance variables, in this case *firstName*. Most of the time programmers will do the latter in order to keep the names consistent and recognizable, especially with larger applications. If you keep the same variable name throughout the application it is easier to follow. 
 
 ```java
-public Student(String firstName)
-{
+ public Student(String firstName)
+ {
 	firstName = firstName;
-}
+ }
 ```
 
 There's a catch though. When you have a parameter the same as your instance variable, it causes confusion in the compiler because of how it looks up variable name references. Once the compiler comes across any variable name, in our case *firstName*, it first looks locally to see if a variable of that name has been declared (Figure 2.9). If one is available, the compiler uses it. 
@@ -669,30 +669,30 @@ Generally constant variables are in all caps with an underscore `_` separating a
 Declaring a constant is similar to declaring an instance variable with the addition of the final keyword. This tells the compiler that once a value is assigned to the variable it cannot be replaced with a new value. In the Course management application, we'll create a variable to hold the maximum number of credit hours a student can take. We will use this constant later when enrolling students into classes.
 
 ```java
-public final int MAX_SEMESTER_HOURS;
+ public final int MAX_SEMESTER_HOURS;
 ```
 
 For initialization we have two options. The first option is to initialize the constant in the constructor(s) with the rest of the instance variables.
 
 ```java
-public class Student
-{
+ public class Student
+ {
 	public final int MAX_SEMESTER_HOURS;
 
 	public Student()
 	{
 		MAX_SEMESTER_HOURS = 15;
 	}
-}
+ }
 ```
 
 The second option is to initialize it at the same time it is declared.
 
 ```java
-public class Student
-{
+ public class Student
+ {
 	public final int MAX_SEMESTER_HOURS = 15;
-}
+ }
 ```
 
 These are the only locations where you are permitted to assign a value to a constant. Most programmers opt to declare and initialize constants at the beginning of the class. 
