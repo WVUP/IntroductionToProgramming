@@ -10,7 +10,7 @@
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Name: <DOG NAME>
+ Name: <DOG NAME>
     Age: <#> years
     Breed: <Breed>
     Weight: <#> lbs
@@ -30,7 +30,7 @@ Name: <DOG NAME>
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Name: <CAT NAME>
+ Name: <CAT NAME>
     Age: <#> years
     Breed: <Breed>
     Indoors Only: <true/false>
@@ -50,7 +50,7 @@ Name: <CAT NAME>
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Name: <BIRD NAME>
+ Name: <BIRD NAME>
     Age: <#> years
     Species: <Species>
     Wingspan: <#> in
@@ -70,16 +70,16 @@ Name: <BIRD NAME>
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Hello! Welcome to Fuzzy Bytes Pet Adoption!
-We help match loving families with wonderful pets.
+ Hello! Welcome to Fuzzy Bytes Pet Adoption!
+ We help match loving families with wonderful pets.
 ```
 
 4.	Create three methods called *adoptDog()*, *adoptCat()*, and *adoptBird()*. These methods do not bring in any parameters and will not return any values. The methods should display a concatenated message to the screen stating what the adoption fee is. Example outputs for each method call are shown below: 
 
 ```
-adoptDog(); //Output: The adoption fee for a dog is $35.50.
-adoptCat(); //Output: The adoption fee for a cat is $25.00.
-adoptBird(); //Output: The adoption fee for a bird is $15.75.
+ adoptDog(); //Output: The adoption fee for a dog is $35.50.
+ adoptCat(); //Output: The adoption fee for a cat is $25.00.
+ adoptBird(); //Output: The adoption fee for a bird is $15.75.
 ```
 
 5.	Create a method called *displayAdoptionFees()* that does not use parameters or return any values. The method should display the following output in the terminal. Use escape characters.
@@ -87,7 +87,7 @@ adoptBird(); //Output: The adoption fee for a bird is $15.75.
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Adoption Fees:
+ Adoption Fees:
     Dog adoption fee: $35.50 
     Cat adoption fee: $25.00
     Bird adoption fee: $15.75
@@ -100,7 +100,7 @@ Adoption Fees:
 <caption><strong>Console Output:</strong></caption>
 
 ```
-What type of pet would you like to adopt?
+ What type of pet would you like to adopt?
     Dog
     Cat
     Bird

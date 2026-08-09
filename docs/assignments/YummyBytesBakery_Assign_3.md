@@ -10,7 +10,7 @@
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Name: <COOKIE NAME>
+ Name: <COOKIE NAME>
     Flour: <#> cups
     Sugar: <#> cups
     Butter: <#> sticks
@@ -30,7 +30,7 @@ Name: <COOKIE NAME>
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Name: <MUFFIN NAME>
+ Name: <MUFFIN NAME>
     Flour: <#> cups
     Baking Powder: <#> tsp
     Salt: <#> tsp
@@ -51,7 +51,7 @@ Name: <MUFFIN NAME>
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Name: <DOUGHNUT NAME>
+ Name: <DOUGHNUT NAME>
     Milk: <#> cups
     Yeast: <#> packets
     Sugar: <#> cups
@@ -73,8 +73,8 @@ Name: <DOUGHNUT NAME>
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Hello! Welcome to Yummy Bytes Bakery!
-We sell an array of various pastries and other desserts.
+ Hello! Welcome to Yummy Bytes Bakery!
+ We sell an array of various pastries and other desserts.
 ```
 
 5.	Create three methods called *sellCookies()*, *sellMuffins()*, and *sellDoughnuts()*. Each of these brings in the number of pastries to sell. They will not return any values. The methods should perform the following tasks:
@@ -85,9 +85,9 @@ We sell an array of various pastries and other desserts.
 - Display a concatenated message to the screen stating what the total is. Example outputs for each method call are shown below:
 
 ```
-sellCookies(3);     //Output: Your total is $0.75
-sellMuffins(3);      //Output: Your total is $2.25
-sellDoughnuts(3);   //Output: Your total is $4.50
+ sellCookies(3);     //Output: Your total is $0.75
+ sellMuffins(3);      //Output: Your total is $2.25
+ sellDoughnuts(3);   //Output: Your total is $4.50
 ```
 
 6.	Create a method called *printOrderOption()* that does not use parameters or returns any values. The method should display the following output in the terminal. Use escape characters.
@@ -95,7 +95,7 @@ sellDoughnuts(3);   //Output: Your total is $4.50
 <caption><strong>Console Output:</strong></caption>
 
 ```
-What type of pastry would you like to order?
+ What type of pastry would you like to order?
     Cookie
     Doughnut
     Muffin
