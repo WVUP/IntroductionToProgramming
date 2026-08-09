@@ -201,7 +201,7 @@ public String getFullName()
 
 The Javadoc tool is provided by Java as a way to generate a formatted document used as a guide for the class. The document provides the reader with all the information needed to implement and use the class without reading its code file.
 
-There are different tags that further define what the documentation is describing. At the class level, you have the tags `@author` and `@version` shown on lines 4 and 5 in the code segment below. The `@author` tag lists who worked on this particular class. This is useful in keeping track of who wrote the original code, as well as anyone else who has modified it. 
+There are different tags that further define what the documentation is describing. At the class level, you have the tags `@author` and `@version` shown in the code segment below. The `@author` tag lists who worked on this particular class. This is useful in keeping track of who wrote the original code, as well as anyone else who has modified it. 
 
 ```java
  /**
@@ -455,14 +455,14 @@ When you are dealing with any object data type, you need to make sure that you h
 
 This is the point where null values occur. Nulls are in between points where there is space reserved for data, but there's no structure to save the data in. Likewise, with the house. We have a space reserved for it, but we can't start moving furniture in yet. While this can be used to our advantage later on, this causes a problem when we try to use the variable.
 
-Using the previous code example, we'll comment out the statement at line 5. After executing this code snippet, we see that there is an issue with the output.
+Using the previous code example, we'll comment out the *firstName* assignment statement. After executing this code snippet, we see that there is an issue with the output.
 
 ```java
 //declaring the variable
 private String firstName;  
 
 //assigning data to the variable
-//firstName = "Levi";  
+//firstName = "Levi"; 
 
 //application goes into memory to retrieve the assigned value 
 System.out.println("hello "+ firstName); 
@@ -638,7 +638,7 @@ If the compiler doesn't find a local declaration, then expand its search to the 
 
 This lookup process occurs every time a variable is used. From the example with different instance and parameter names, we can see that the variables would be referenced correctly. The new information being pulled in from the parameter will be assigned to the instance variable. 
 
-What happens when the names are the same? The same lookup process occurs, but each side of the assignment statement is referencing the same parameter Figure 2.11). The value of the parameter is being accessed and modified. The instance variable is ignored completely. 
+What happens when the names are the same? The same lookup process occurs, but each side of the assignment statement is referencing the same parameter (Figure 2.11). The value of the parameter is being accessed and modified. The instance variable is ignored completely. 
 
 
 <caption><strong>Figure 2.11: Variable lookup - conflict with variables of the same name.</strong></caption>
@@ -780,8 +780,8 @@ These are the only locations where you are permitted to assign a value to a cons
 23.	How do you differentiate between overloaded constructors?
 24.	What is the difference between local variables and instance variables?
 25.	What is the scope of a local variable declared within a constructor?
-26.	What is the purpose of the ‘this’ keyword in Java?
-27.	How does the ‘this’ keyword resolve naming conflicts between instance variables and parameters?
+26.	What is the purpose of the 'this' keyword in Java?
+27.	How does the 'this' keyword resolve naming conflicts between instance variables and parameters?
 28.	What is the state of an instance?
 29.	Why is knowing the state of an instance important for debugging?
 30.	What is a constant variable in Java, and how is it declared?
