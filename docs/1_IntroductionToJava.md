@@ -49,7 +49,7 @@ Object-Oriented programming is one of the four programming paradigms (Table 1.1)
 - Object-Oriented: Based on the concept of "objects" containing data and code
 - Functional: Treats computation as the evaluation of mathematical functions
 
-## Language Charateristics
+## Language Characteristics
 All programming languages share a few key characteristics, including Java.  These are:
 
 - ***Keywords*** - Reserved words with predefined meanings in the language (e.g., "if", "while", "class").
