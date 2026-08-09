@@ -15,7 +15,10 @@ public class Student
 }
 ```
 
-# Liquid Tages
+Test inline `code` segment
+
+
+# Liquid Tags
 
 {% highlight java linenos %}
 public class Student
@@ -31,3 +34,5 @@ public class Student
   	private boolean isActiveStudent;    //true
 }
 {% endhighlight %}
+
+Test inline `code` segment
