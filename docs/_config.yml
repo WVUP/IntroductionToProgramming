@@ -1,7 +1,7 @@
 # Site Settings
 title: "Introduction to Programming"
 description: "OER Introduction to Programming Chapters"
-theme: jekyll-theme-minima
+theme: jekyll-theme-slate
 
 # Markdown Processor Settings
 kramdown:
