@@ -21,9 +21,9 @@ Includes content from Appendix I: Static Variables and Methods.
 3.	Create a new method called *testData()* that takes in no parameters and does not return anything. In here, place the following statements. These statements will create test data for you to use in your application. Call this method in your default constructor.
 
 ```java
-cookie = new Cookie(2.5, 0.75, 1.0, 0.0, 1.0, “Chocolate Chip”);
-muffin = new Muffin(3.0, 0.5, 1.0, 1.5, 3, 1.25, 1.0, “Blueberry”);
-doughnut = new Doughnut(2.0, 1, 2.5, 3, 1.0, 3.0,“Boston Cream”); 
+ cookie = new Cookie(2.5, 0.75, 1.0, 0.0, 1.0, “Chocolate Chip”);
+ muffin = new Muffin(3.0, 0.5, 1.0, 1.5, 3, 1.25, 1.0, “Blueberry”);
+ doughnut = new Doughnut(2.0, 1, 2.5, 3, 1.0, 3.0,“Boston Cream”); 
 ```
 
 4.	In the *sellCookie()*, *sellMuffin()* and *sellDoughnut()* methods, add a parameter that brings in the amount of money a customer is willing to pay. After they state how many items they wish to buy and their total amount to pay has been calculated, check to see if the customer gave you enough money. If the customer pays the exact amount or more, add the total amount sold to the *register* variable and thank the customer for their payment. Otherwise, tell the user that they did not provide enough money. For example, if the customer pays $1.00 for a $0.75 muffin, the register’s amount will increase from $100 to $100.75. We are not worried about giving change back to the customer at this time.

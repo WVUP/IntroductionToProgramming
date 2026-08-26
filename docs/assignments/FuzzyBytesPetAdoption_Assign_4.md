@@ -41,9 +41,9 @@ Includes content from Appendix I: Static Variables and Methods.
 3.	Create a new method called *testData()* that takes in no parameters and does not return anything. In this method, place the following statements. These statements will initialize your variables and create test data for you to use in your application. Call this method at the end of your default constructor. 
 
 ```java
-dog = new Dog(“Sparky”, 3, “German Shepherd”, 60.5, true, “Protective”, false, false);
-cat = new Cat(“Snowball”, 2, “Ragdoll”, true, true, “Long”, false);
-bird = new Bird(“Chirp”, 5, “Parakeet”, 11.5, true, 15, false);
+ dog = new Dog(“Sparky”, 3, “German Shepherd”, 60.5, true, “Protective”, false, false);
+ cat = new Cat(“Snowball”, 2, “Ragdoll”, true, true, “Long”, false);
+ bird = new Bird(“Chirp”, 5, “Parakeet”, 11.5, true, 15, false);
 ```
 
 4.	In the *adoptDog()*, *adoptCat()* and *adoptBird()* methods, add a parameter that brings in the name of the pet the user wants to adopt. Check to see if the pet’s name matches a pet at the center and if the pet has not been adopted. If the pet is available, mark it as adopted, add the adoption fee to the *totalRevenue* variable, and confirm the adoption by displaying the pet's name and the adoption fee with a message of congratulations to the user. If the pet has already been adopted or the name does not match, apologize to the user and inform them that the pet is not available for adoption. For example, if the user wants to adopt the dog named "Max" and Max has not been adopted, the *totalRevenue* amount will increase from $0 to $35.50, the adopted status will be set to true, and you will display a message confirming Max's adoption with the $35.50 adoption fee.
