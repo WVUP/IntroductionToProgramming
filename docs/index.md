@@ -1,19 +1,19 @@
 # Introduction to Programming
 
 ## Modules
-- [Introduction to Java](https://wvup.github.io/IntroductionToProgramming/1_IntroductionToJava)
-- [Object-Oriented Programming Basics](https://wvup.github.io/IntroductionToProgramming/2_Object-OrientedProgrammingBasics)
-- [Methods](https://wvup.github.io/IntroductionToProgramming/3_Methods)
-- [Conditional Statements](https://wvup.github.io/IntroductionToProgramming/4_ConditionStatements)
-- [Arrays](https://wvup.github.io/IntroductionToProgramming/5_Arrays)
-- [Loops](https://wvup.github.io/IntroductionToProgramming/6_Loops)
-- [Collections](https://wvup.github.io/IntroductionToProgramming/7_Collections)
+- [1 - Introduction to Java](https://wvup.github.io/IntroductionToProgramming/1_IntroductionToJava)
+- [2 - Object-Oriented Programming Basics](https://wvup.github.io/IntroductionToProgramming/2_Object-OrientedProgrammingBasics)
+- [3 - Methods](https://wvup.github.io/IntroductionToProgramming/3_Methods)
+- [4 - Conditional Statements](https://wvup.github.io/IntroductionToProgramming/4_ConditionStatements)
+- [5 - Arrays](https://wvup.github.io/IntroductionToProgramming/5_Arrays)
+- [6 - Loops](https://wvup.github.io/IntroductionToProgramming/6_Loops)
+- [7 - Collections](https://wvup.github.io/IntroductionToProgramming/7_Collections)
 
 ## Appendices
-- [Static Variables and Methods](https://wvup.github.io/IntroductionToProgramming/app1_StaticVariablesAndMethods)
-- [Random](https://wvup.github.io/IntroductionToProgramming/app2_Random)
-- [Scanner](https://wvup.github.io/IntroductionToProgramming/app3_Scanner)
-- [Enumerated Types](https://wvup.github.io/IntroductionToProgramming/app4_EnumeratedTypes)
+- [I - Static Variables and Methods](https://wvup.github.io/IntroductionToProgramming/app1_StaticVariablesAndMethods)
+- [II - Random](https://wvup.github.io/IntroductionToProgramming/app2_Random)
+- [III - Scanner](https://wvup.github.io/IntroductionToProgramming/app3_Scanner)
+- [IV - Enumerated Types](https://wvup.github.io/IntroductionToProgramming/app4_EnumeratedTypes)
 
 ---
 
