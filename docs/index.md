@@ -4,7 +4,7 @@
 - [Introduction to Java](https://wvup.github.io/IntroductionToProgramming/1_IntroductionToJava)
 - [Object-Oriented Programming Basics](https://wvup.github.io/IntroductionToProgramming/2_Object-OrientedProgrammingBasics)
 - [Methods](https://wvup.github.io/IntroductionToProgramming/3_Methods)
-- [Conditional Statements](https://wvup.github.io/IntroductionToProgramming/4_ConditionalStatements)
+- [Conditional Statements](https://wvup.github.io/IntroductionToProgramming/4_ConditionStatements)
 - [Arrays](https://wvup.github.io/IntroductionToProgramming/5_Arrays)
 - [Loops](https://wvup.github.io/IntroductionToProgramming/6_Loops)
 - [Collections](https://wvup.github.io/IntroductionToProgramming/7_Collections)
