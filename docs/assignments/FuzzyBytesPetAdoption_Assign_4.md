@@ -1,4 +1,5 @@
-# Fuzzy Bytes Pet Adoption - Module 3 Assignment
+# Fuzzy Bytes Pet Adoption - Module 4 Assignment
+
 Includes content from [Appendix I: Static Variables and Methods](../app1_StaticVariablesAndMethods.md).
 
 > **NOTE:** This assignment is setting up the framework to utilize user input. The new methods in the FuzzyBytesPetAdoption class will be partially complete, and this is ok. We will revisit these methods in later assignments.

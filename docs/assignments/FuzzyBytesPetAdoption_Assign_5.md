@@ -1,6 +1,6 @@
-# Fuzzy Bytes Pet Adoption - Module 3 Assignment
+# Fuzzy Bytes Pet Adoption - Module 5 Assignment
 
-**NOTE:** At this point only one of each type of animal is being used and this is ok. In a later module, the assignment will have the code be refactored to include multiples of each animal. 
+> **NOTE:** At this point only one of each type of animal is being used and this is ok. In a later module, the assignment will have the code be refactored to include multiples of each animal. 
 
 ## FuzzyBytesPetAdoption Class
 1.	Create a method called *processAdoption()*. Add 2 String parameters, one that brings in the type of pet the user wants to adopt and one that brings in the name of the pet the user wants to adopt.   If the pet type is “Dog”, then call the *adoptDog()* method passing in the name parameter.  If the pet type is “Cat”, then call the *adoptCat()* method passing in the name parameter. Otherwise, If the pet type is “Bird”, then call the *adoptBird()* method passing in the name parameter. 

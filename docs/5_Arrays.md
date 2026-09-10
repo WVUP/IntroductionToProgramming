@@ -367,7 +367,7 @@ Retrieving information follows the same format as a single array:
 2.	How are array elements stored in memory?
 3.	What does it mean that an array is fixed in size?
 4.	How do you declare an array in Java?
-5.	Why are square brackets ([]) used in array declarations?
+5.	Why are square brackets (`[]`) used in array declarations?
 6.	What is the difference between declaring and initializing an array?
 7.	Give an example of how to initialize an array that needs to have 5 elements.
 8.	Can you initialize an array without specifying its size? If so, give an example.
@@ -376,10 +376,10 @@ Retrieving information follows the same format as a single array:
 11.	Why do arrays use zero-based indexing?
 12.	How does the computer calculate the memory address of an element in an array?
 13.	How do you retrieve an element from an array using its index? Give an example.
-14.	What is the length field in an array, and how is it used?
+14.	What is the *length* field in an array, and how is it used?
 15.	Why can't the length of an array be changed after initialization?
 16.	What is an ArrayIndexOutOfBoundsException, and how can it be prevented?
-17.	What is the main() method in Java, and what is its significance?
-18.	What is the purpose of the String[] args parameter in the main() method?
+17.	What is the *main()* method in Java, and what is its significance?
+18.	What is the purpose of the `String[] args` parameter in the *main()* method?
 19.	What is a multidimensional array, and how does it differ from a single-dimensional array?
 20.	How are elements in a 2D array accessed? Give an example.
