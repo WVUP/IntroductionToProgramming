@@ -287,13 +287,26 @@ The end result of this equation is the same. You can read this as "assign *numbe
 
 <caption><strong>Table 3.2: Compound operators.</strong></caption>
 
-| Compound Operators |
-| ------------------ |
-| +=                 |
-| -=                 |
-| *=                 |
-| /=                 |
-| %=                 |
+<table>
+   <tr>
+      <th>Compound Operators</th>
+   </tr>
+   <tr>
+      <td>+=</td>
+   </tr>
+   <tr>
+      <td>-=</td>
+   </tr>
+   <tr>
+      <td>*=</td>
+   </tr>
+   <tr>
+      <td>/=</td>
+   </tr>
+   <tr>
+      <td>%=</td>
+   </tr>
+</table>
 
 
 These compound operators all act in a similar manner. They assign a value to a variable equal to itself with whatever operation you wish to use and another value. The code segment below shows how you would use the `-=` compound operator to decrease the value *numberOfStudents*.
