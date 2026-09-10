@@ -288,27 +288,32 @@ Since we are assigning a variable the result of its current value plus one, we c
 
 The end result of this equation is the same. You can read this as "assign *numberOfStudents* the value of itself plus 1". The full list of compound statement operators is included in table 3.2.
 
-<caption><strong>Table 3.2: Compound operators.</strong></caption>
+
 
 <table>
-   <tr>
-      <th>Compound Operators</th>
-   </tr>
-   <tr>
-      <td>+=</td>
-   </tr>
-   <tr>
-      <td>-=</td>
-   </tr>
-   <tr>
-      <td>*=</td>
-   </tr>
-   <tr>
-      <td>/=</td>
-   </tr>
-   <tr>
-      <td>%=</td>
-   </tr>
+   <caption><strong>Table 3.2: Compound operators.</strong></caption>
+   <thead>
+      <tr>
+         <th>Compound Operators</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>+=</td>
+      </tr>
+      <tr>
+         <td>-=</td>
+      </tr>
+      <tr>
+         <td>*=</td>
+      </tr>
+      <tr>
+         <td>/=</td>
+      </tr>
+      <tr>
+         <td>%=</td>
+      </tr>
+   </tbody>
 </table>
 
 
@@ -502,7 +507,7 @@ Whether it's displayed on a computer screen or printed on a piece of paper, name
 <caption><strong>Console Output:</strong></caption>
 
 ```
-Eric Bryon
+ Eric Bryon
 ```
 
 
