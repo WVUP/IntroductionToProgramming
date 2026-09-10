@@ -288,7 +288,7 @@ The end result of this equation is the same. You can read this as "assign *numbe
 <caption><strong>Table 3.2: Compound operators.</strong></caption>
 
 | Compound Operator |
-| --- |
+| ----------------- |
 | += |
 | -= |
 | *= |
