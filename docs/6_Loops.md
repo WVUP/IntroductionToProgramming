@@ -443,7 +443,7 @@ If you want to skip over one iteration and process the remaining data set, use `
  Ayden 
 ```
 
-# sEARCHING
+# Searching
 One of the more common uses of loops in entry-level applications is iterating through data to find something. `while` loops are fantastic for this type of functionality. Since it is controlled by a condition statement, it gives you an easy way to leave your looping structure once you’ve found what you’re looking for.
 
 Imaging you’re in a room with cabinets lining the walls. You have been asked to find a red coffee mug. How you would accomplish this task is to open up each cabinet, look at the contents inside it, and if you find the red coffee mug, you finish your search.
