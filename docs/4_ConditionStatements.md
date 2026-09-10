@@ -397,6 +397,7 @@ Below is an example of a `switch` statement that will provide feedback based on 
 `switch` statements have a default case (line 18). If a value doesn't meet any of the cases listed, it will fall into here similar to else in `if/else` statements.
 
 Let’s walk through how this example would work.
+
 - Assume that *letterGrade* = ‘B’.
 - The first comparison is on line 3. The statement will check to see if ‘B’ == ‘A’ which is false.
 - Next, the case on line 6 is evaluated. The comparison ‘B’ == ‘B’ is true.
@@ -503,6 +504,7 @@ Ternary operators are useful only if you have an either/or situation. `else if` 
 
 
 # Key Terms
+
 - `!` (Not)
 - `&&` (And)
 - `||` (Or)
@@ -521,6 +523,7 @@ Ternary operators are useful only if you have an either/or situation. `else if` 
 - Ternary Operator
 
 # Review Questions
+
 1.	What are condition statements used for in programming?
 2.	What role do comparison operators play in condition statements? What comparison operators are available in Java?
 3.	What is object equality in the context of programming?

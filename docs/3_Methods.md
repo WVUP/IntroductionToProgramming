@@ -5,6 +5,7 @@ In Java, classes do not merely hold data. They also perform actions through meth
 Java documentation is essential for describing the functionality of methods, including their return values and parameters. Proper documentation ensures that the purpose and usage of methods are clear to other developers. This, along with testing, is vital to the success of your application. Testing your code is crucial for ensuring it functions as intended. Syntax errors and logic errors are common issues developers must address. Thorough testing and debugging helps to alleviate and correct these errors.
 
 ## Learning Objectives
+
 - Demonstrate how to declare methods with proper naming conventions.
 - Understand the role of accessor and mutator methods in encapsulation.
 - Describe how parameters and return types are used in methods.
@@ -42,6 +43,7 @@ So, how do we take these written instructions and turn it into code? The general
 ```
 
 Here is the breakdown of the method header:
+
 - `public` --> visibility
 - `void` --> return type
 - *getFirstName* --> method name
@@ -55,6 +57,7 @@ Naming conventions for methods are the same as instance variables. Method names 
 Since methods are actions that the class can take, starting the method name with a verb allows you to quickly summarize what action it is performing.
 
 Example method names include: 
+
 - *getFirstName*
 - *calculateSalesTax*
 - *generateFinancialStatement*
@@ -616,15 +619,15 @@ Up to this point we have been creating individual classes. Now we need to add co
 In our Course class, we need a way to enroll students. In order to do this, we first need to create an instance of the class we want to use. At the top of the Course class definition where the instance variables are declared, we are going to add a new variable. This time it will have the data type of Student. 
 
 ```java
-  public class Course
-  {
-  	private String courseName;
-  	private int courseID;
-  	private int MAX_SEATS = 20;
-  	private int numberOfStudents;
-  
-  	private Student student; //new instance variable
-  }
+ public class Course
+ {
+   private String courseName;
+   private int courseID;
+   private int MAX_SEATS = 20;
+   private int numberOfStudents;
+
+   private Student student; //new instance variable
+ }
 ```
 
 This acts as a link between the Course and Student classes. Anytime we want to access a method defined in the Student class, we'll use the student instance variable.
@@ -637,11 +640,11 @@ Inside the Course constructor, we'll add a statement to initialize our new Stude
 ```java
  public Course()
  {
-    this.courseName = "Unnamed";
-    this.courseID = 999;
-    this.numberOfStudents = 0;
-
-    student = new Student();
+   this.courseName = "Unnamed";
+   this.courseID = 999;
+   this.numberOfStudents = 0;
+   
+   student = new Student();
  }
 ```
 
@@ -652,8 +655,8 @@ You can also pass a pre-existing instance of the Student class as a parameter, a
 ```java
  public void enrollStudent(Student student)
  {
-    setStudent(student);
-    numberOfStudents++;
+   setStudent(student);
+   numberOfStudents++;
  }
 ```
 
@@ -664,13 +667,13 @@ While both options are valid, it is best to initialize the variables using the `
 Once we've initialized our variable, we can use it as a "starting point" to get to the Student methods. On line 6 in the following code segment, we are displaying the student's name in the terminal. 
 
 ```java
-  public void displayCourseInformation()
-  {
-  	System.out.println("Course name: " + getCourseName());
-  	System.out.print("Course ID: " + getCourseID() + "\n\tStudents Enrolled: " + getNumberOfStudents() + "\n");
-  
-  	System.out.println("Student: " + student.getLastName() + ", " + student.getFirstName());
-  }
+ public void displayCourseInformation()
+ {
+   System.out.println("Course name: " + getCourseName());
+   System.out.print("Course ID: " + getCourseID() + "\n\tStudents Enrolled: " + getNumberOfStudents() + "\n");
+
+   System.out.println("Student: " + student.getLastName() + ", " + student.getFirstName());
+ }
 ```
 
 To call the Student class getter methods we start with the instance variable. Next, we use the ***dot operator*** `.`. This tells the compiler to go into the instance preceding it and call the following method. The method being called must be declared `public` in order for this to work. Otherwise you'll receive a syntax error stating that the method in question has private access (Figure 3.9).
@@ -732,23 +735,23 @@ This process continues every time we make a modification to a String variable: p
 The *nameCapitalization()* method shown below is using the String *substring()*, *toUppercase()*, and *toLowerCase()* methods. This is to mimic Pascal Case where the first letter of every work is capitalized.  
 
 ```java
-  public void nameCapitalization()
-  {
-  	//displays the current name to the terminal
-  	System.out.println(firstName + " " + lastName);
-  
-  	/*
-  	* Takes the first character of the name and capitalizes it,
-  	* then concatenates with the remainder of the name in lowercase
-  	*/
-  	firstName = firstName.substring(0, 1).toUpperCase()	+ firstName.substring(1).toLowerCase();
+ public void nameCapitalization()
+ {
+   //displays the current name to the terminal
+   System.out.println(firstName + " " + lastName);
 
- 	//same as above, but for the last name
- 	lastName = lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase();
-    	
- 	//displays the corrected name to the terminal
- 	System.out.println(firstName + " " + lastName); 
-  }
+   /*
+   * Takes the first character of the name and capitalizes it,
+   * then concatenates with the remainder of the name in lowercase
+   */
+   firstName = firstName.substring(0, 1).toUpperCase()	+ firstName.substring(1).toLowerCase();
+
+   //same as above, but for the last name
+   lastName = lastName.substring(0, 1).toUpperCase() + lastName.substring(1).toLowerCase();
+      
+   //displays the corrected name to the terminal
+   System.out.println(firstName + " " + lastName); 
+ }
 ```
 
 <caption><strong>Figure 3.14: Sample output of chaining methods.</strong></caption>
@@ -777,17 +780,17 @@ In addition to having class level tags, Javadoc has method level tags to describ
 The `@return` tag is used for any method that is returning data. On line 5 in the code sample below, the `@return` tag states that the value being returned from this method is a "calculated grade as a percentage". When other programmers are reading this documentation, they are not able to see the inner workings of the method itself. They can only rely on the method signature and the descriptions given by others.
 
 ```java
-  /**
-   * Calculates the final grade (percentage)
-   * of the current assignment
-   *
-   * @return Calculated grade as a percentage
-   */
-  public double gradeAssignment()
-  {
-   	double temp = (correctAnswers / numberOfQuestions) * 100;
- 	return temp;
-  }
+ /**
+  * Calculates the final grade (percentage)
+  * of the current assignment
+  *
+  * @return Calculated grade as a percentage
+  */
+ public double gradeAssignment()
+ {
+   double temp = (correctAnswers / numberOfQuestions) * 100;
+   return temp;
+ }
 ```
 
 Figure 3.17 shows the generated Javadoc. The left column under "Modifier and Type" shows the return type, if any. The method's description from the previous code segment is highlighted.
@@ -814,21 +817,21 @@ The `@param` tag gives you the ability to describe what each parameter is repres
 To implement this in your own code, use the `@param` tag for each parameter your method contains. You'll state the parameter name, then the description of the parameter. Lines 4 and 5 below the Javadoc descriptions for the *pCorrectAnswer* and *pTotalPoints* parameters.
 
 ```java
-  /**
-  * Calculates the final grade (percentage) of the current assignment
-  *
-  * @param pCorrectAns Total number of correctly answered questions
-  * @param pTotalPts The total points possible for the assignment
-  * 
-  * @return The final grade calculated based on the provided 
-  *         parameters returned as a percentage
-  */
-  public double gradeAssignment(double pCorrectAnswers, double pTotalPoints)
-  {
-  	double finalGrade = (pCorrectAnswers / pTotalPoints) * 100;
+ /**
+ * Calculates the final grade (percentage) of the current assignment
+ *
+ * @param pCorrectAns Total number of correctly answered questions
+ * @param pTotalPts The total points possible for the assignment
+ * 
+ * @return The final grade calculated based on the provided 
+ *         parameters returned as a percentage
+ */
+ public double gradeAssignment(double pCorrectAnswers, double pTotalPoints)
+ {
+ 	double finalGrade = (pCorrectAnswers / pTotalPoints) * 100;
   
   	return finalGrade;
-  }
+ }
 ```
 
 The final documentation is shown in figure 3.20.
@@ -845,16 +848,16 @@ The final documentation is shown in figure 3.20.
 Previously when talking about getters, we were returning the value stored in a variable. Now, we can create methods that can return more valuable information. Outside of the getters and setters, you can add a return type to any method you create. You can return the result of equations, such as an assignment's final grade or a concatenated String (Figures 3.21 and 3.22 respectively).
 
 ```java
-  /**
-   * Calculates the final grade (percentage)
-   * of the current assignment
-   *
-   * @return Calculated grade as a percentage
-   */
-  public double gradeAssignment()
-  {
+ /**
+  * Calculates the final grade (percentage)
+  * of the current assignment
+  *
+  * @return Calculated grade as a percentage
+  */
+ public double gradeAssignment()
+ {
   	return (correctAnswers / numberOfQuestions) * 100;
-  }
+ }
 ```
  
 <caption><strong>Figure 3.21: Example of return value for an equation.</strong></caption>
@@ -863,16 +866,16 @@ Previously when talking about getters, we were returning the value stored in a v
 
 
 ```java
-  /**
-   * Student's full name is returned in last  name, first name
-   * format
- 	 * 
- 	 * @return Concatenated full name of student
-   */
-  public String getFullName()
-  {
-  		return getLastName() + ", " + getFirstName();
-  }
+ /**
+  * Student's full name is returned in last  name, first name
+  * format
+  * 
+  * @return Concatenated full name of student
+  */
+ public String getFullName()
+ {
+   return getLastName() + ", " + getFirstName();
+ }
 ```
 
 <caption><strong>Figure 3.22: Example of concatenated String return value.</strong></caption>
@@ -900,16 +903,16 @@ As previously stated, ***breakpoints*** are locations where you want to pause yo
 Initially, the best place to start placing breakpoints is where you last made a change. It takes a lot of trial and error to pinpoint a good location to start debugging as a beginner programmer. Over time, you'll learn to recognize where logical errors are more likely to occur. We'll use the *displayCourseInformation()* method to demonstrate the debugging process.
 
 ```java
-  public void displayCourseInformation()
-  {
-  	System.out.println("Course name: " + getCourseName());
-  	System.out.print("Course ID: " + getCourseID() 
-  					+ "\n\tStudents Enrolled: " 
-  					+ getNumberOfStudents() + "\n");
-  
-  	System.out.println("Student: " + student.getLastName() + "" 
-  					+ student.getFirstName());
-  }
+ public void displayCourseInformation()
+ {
+   System.out.println("Course name: " + getCourseName());
+   System.out.print("Course ID: " + getCourseID() 
+            + "\n\tStudents Enrolled: " 
+            + getNumberOfStudents() + "\n");
+
+   System.out.println("Student: " + student.getLastName() + "" 
+            + student.getFirstName());
+}
 ```
 
 ### Debugging Window
@@ -1092,6 +1095,7 @@ The 'Terminate' option is given when a breakpoint is reached. If you found your 
 
 
 # Key Terms
+
 - `@param`
 - `@return`
 - Accessor Methods
@@ -1121,6 +1125,7 @@ The 'Terminate' option is given when a breakpoint is reached. If you found your 
 
 
 # Review Questions
+
 1.	What is a Java method, and why is it important?
 2.	What keyword is used to declare a method as accessible to any other class? Why would this type of declaration be used?
 3.	What does the void keyword indicate in a method declaration?

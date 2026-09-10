@@ -3,6 +3,7 @@
 This module prepares you for the text ahead. It will give a brief overview of the Java programming language and its history. It will also introduce you to the BlueJ IDE that we're using throughout this text and upcoming assignments. You'll then be introduced to the Course Management System and Yummy Bytes Bakery point-of-sale system that you will be developing throughout the course. Finally, it will also show you where to find answers to Java syntax questions that may arise as you're developing Java applications.
 
 ## Learning Objectives
+
 - Understand the components that make up the Java ecosystem.
 - Understand what Java is as a programming language.
 - Understand the main features of the BlueJ IDE.
@@ -11,6 +12,7 @@ This module prepares you for the text ahead. It will give a brief overview of th
 
 # What is Java?
 What is Java? That is not a simple question to answer. Java has a lot of different parts that work together to create the overall Java Ecosystem. There are three core components to Java:
+
 1.	Java Virtual Machine (JVM)
 2.	Java Runtime Environment (JRE)
 3.	Java Development Kit (JDK)
@@ -44,6 +46,7 @@ An object is a piece of software that represents a person, place, thing, or idea
 Object-Oriented programming is one of the four programming paradigms (Table 1.1), and the most widely used. A programming paradigm is a very high-level style or approach to structuring and designing software solutions.  It represents a method or style of programming that defines how code is organized and how problems are solved using a programming language.
 
 ### Programming Paradigms
+
 - Imperative: Focuses on describing how a program operates
 - Declarative: Focuses on what the program should accomplish
 - Object-Oriented: Based on the concept of "objects" containing data and code

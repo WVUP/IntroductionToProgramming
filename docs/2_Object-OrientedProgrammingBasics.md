@@ -3,6 +3,7 @@
 In the realm of programming, understanding the fundamental concepts of objects, classes, and instances is crucial. These terms, though often used interchangeably, hold distinct meanings and functions within object-oriented programming (OOP). This module will delve into these concepts through tangible analogies and practical examples, using a course management application as our framework. We will start to explore core components that define a class, such as instance variables and constructors. Additionally, we will touch on key aspects like naming conventions, data types, and the significance of comments in code. 
 
 ## Learning Objectives
+
 - Explain the differences between classes, objects, and instances.
 - Implement a Java class.
 - Explain naming conventions for classes and instance variables.
@@ -124,6 +125,7 @@ Single-line comments can exist on their own line like the above example. It can 
 ```
 
 Comments have a wide variety of uses in programming.
+
 - Component descriptions
 - To-dos
 - Troubleshooting
@@ -267,6 +269,7 @@ The generated Javadoc file for the class with our comments highlighted is shown 
 
 # Instance Variables
 ***Instance variables***, also known as ***fields***, are named references pointing to the memory location where your data will be stored. These are the characteristics that describe your class. When declaring instance variables, you will need three pieces of information: visibility, data type, and a name.
+
 - Visibility - what parts of an application can see, or use, this variable.
 - Data type - what format the data needs to be in. 
 - Name - what the program is going to reference this memory location by.
@@ -310,7 +313,8 @@ Typically, all instance variables are marked as private. One of the major securi
 The second component of our variable declaration is the ***data type***. This is telling the compiler what format the data it's storing is going to be in. We have two different data type categories in Java: primitive and object.
 
 ### Primitive Data Types
-Primitive data types are the fundamental data types in Java. The unique thing about this category is that only one value can be stored at any given time. There are eight different primitive data types :
+Primitive data types are the fundamental data types in Java. The unique thing about this category is that only one value can be stored at any given time. There are eight different primitive data types:
+
 - byte
 - short
 - int
@@ -728,6 +732,7 @@ These are the only locations where you are permitted to assign a value to a cons
 
 
 # Key Terms
+
 - Class
 - Code Block
 - Comments
@@ -755,6 +760,7 @@ These are the only locations where you are permitted to assign a value to a cons
 - This
 
 # Review Questions
+
 1.	What is an object in the context of programming?
 2.	What is a class in programming?
 3.	What is an instance in programming?
