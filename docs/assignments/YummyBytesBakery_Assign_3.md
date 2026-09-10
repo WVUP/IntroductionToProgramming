@@ -78,13 +78,14 @@
 ```
 
 5.	Create three methods called *sellCookies()*, *sellMuffins()*, and *sellDoughnuts()*. Each of these brings in the number of pastries to sell. They will not return any values. The methods should perform the following tasks:
-- Set a local variable equal to the quantity from the parameter multiplied by the appropriate price constant:
 
-    - COOKIE_PRICE for cookies
-    - MUFFIN_PRICE for muffins
-    - DOUGHNUT_PRICE for doughnuts
-    
-- Display a concatenated message to the screen stating what the total is. Example outputs for each method call are shown below:
+    - Set a local variable equal to the quantity from the parameter multiplied by the appropriate price constant:
+
+        - COOKIE_PRICE for cookies
+        - MUFFIN_PRICE for muffins
+        - DOUGHNUT_PRICE for doughnuts
+        
+    - Display a concatenated message to the screen stating what the total is. Example outputs for each method call are shown below:
 
 ```
  sellCookies(3);     //Output: Your total is $0.75
