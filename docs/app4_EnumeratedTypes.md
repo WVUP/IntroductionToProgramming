@@ -91,7 +91,7 @@ Enums can also be used in condition statements. Below is a method that prints a 
     else if (studentMajor == Major.NURSING)
     {
         System.out.println("Thank you for caring about others!");
- 	}
+    }
  }
 ```
 
@@ -127,7 +127,7 @@ Using the same enum class as before, we are going to set up our designation fiel
 ```java
  public enum Major
  {
-	ACCOUNTING("acct"), COMPSCI("cs"), NURSING("nurs"),	UNDECIDED("???");
+	ACCOUNTING("acct"), COMPSCI("cs"), NURSING("nurs"), UNDECIDED("???");
 
 	private String courseInitials;
  }

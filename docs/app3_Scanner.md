@@ -116,30 +116,30 @@ You can also use this method if you want the user to provide commands. This, in 
 
  do
  {
-    System.out.println("Please use one of the following commands:");
-    System.out.println("ADD - Add course");
-    System.out.println("UPDATE - Update course");
-    System.out.println("QUIT - Exit application");
- 
- 	String userResponse = readerA.nextLine();
+	System.out.println("Please use one of the following commands:");
+	System.out.println("ADD - Add course");
+	System.out.println("UPDATE - Update course");
+	System.out.println("QUIT - Exit application");
 
- 	switch(userResponse.toUpperCase())
- 	{
- 		case "ADD":
- 			validAnswer = true;
- 			addNewCourse();
- 			break;
- 		case "UPDATE":
- 			validAnswer = true;
- 			modifyCourse();
- 			break;
- 		case "QUIT":
- 			System.exit(0);
- 			break;
- 		default:
- 			System.out.println("That is not a valid command\n");
- 			break;
- 	}
+	String userResponse = readerA.nextLine();
+
+	switch(userResponse.toUpperCase())
+	{
+		case "ADD":
+			validAnswer = true;
+			addNewCourse();
+			break;
+		case "UPDATE":
+			validAnswer = true;
+			modifyCourse();
+			break;
+		case "QUIT":
+			System.exit(0);
+			break;
+		default:
+			System.out.println("That is not a valid command\n");
+			break;
+	}
  }
  while(validAnswer == false)
 ```
