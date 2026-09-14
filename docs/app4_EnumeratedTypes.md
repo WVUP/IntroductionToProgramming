@@ -95,7 +95,7 @@ Enums can also be used in condition statements. Below is a method that prints a 
  }
 ```
 
-Below is the same example written as a switch statement. This type of structure would be useful if you were to use enums as user commands in a console-based application.
+Below is the same example written as a `switch` statement. This type of structure would be useful if you were to use enums as user commands in a console-based application.
 
 ```java
  public void majorChoiceFeedback()
