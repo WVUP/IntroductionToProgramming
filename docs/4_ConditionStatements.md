@@ -185,7 +185,7 @@ The `else if` and `else` sections are optional. If you want to execute a series 
 For the `&&` (AND) condition, all conditions must be true in order for the whole statement to be true. Let’s take the weather and create a pseudocode example from it.
 
 ```java
- if (weather == “rainy” && weather == “windy”)
+ if (weather == "rainy" && weather == "windy")
  {
     Take an umbrella when going outside.
  }
@@ -201,7 +201,7 @@ In order for us to take an umbrella, it has to be rainy and windy outside. If it
 For the `||` (OR) logical operator, only one condition needs to be true in order for the whole statement to be true. Using our previous example, if it’s rainy, but not windy, we can take our umbrella. Likewise, for if it’s windy, but not rainy. We can also take our umbrella if both statements are true.
 
 ```java
- if (weather == “rainy” || weather == “windy”)
+ if (weather == "rainy" || weather == "windy")
  {
     Take an umbrella when going outside.
  }
@@ -257,7 +257,7 @@ We can use conditional statements to make sure that we are providing a value wit
 Since the else section is not needed, we can exclude it from our condition statement.
 
 ### String Values Present
-For the *setFirstName()* method, we can incorporate an `if/else` statement to make sure that the value passed in through the parameter contains data. Below is the original mutator method. We will assign the parameter *newFirstName* the value `“    Franklin   “` for this example. Since this is a string literal, the spaces before and after Franklin are included in the stored value.
+For the *setFirstName()* method, we can incorporate an `if/else` statement to make sure that the value passed in through the parameter contains data. Below is the original mutator method. We will assign the parameter *newFirstName* the value `"    Franklin   "` for this example. Since this is a string literal, the spaces before and after Franklin are included in the stored value.
 
 ```java
  public void setFirstName(String newFirstName)
@@ -285,7 +285,7 @@ In the *setFirstName()* method, we will use a String method called *trim()*. Thi
  }
 ```
 
-When the *trim()* method is called, the value assigned to *newFirstName* will be changed to `“Franklin”` without the leading and trailing spaces.
+When the *trim()* method is called, the value assigned to *newFirstName* will be changed to `"Franklin"` without the leading and trailing spaces.
 
 <caption><strong>Figure 4.4: Value of newFirstName after calling the trim() method.</strong></caption>
 
@@ -320,10 +320,10 @@ In our condition statement we want to see how many characters are left after rem
  }
 ```
 
-If we use this method on the *newFirstName* variable the value returned will be 8. Since 8 is greater than zero, the name “Franklin” will be assigned to *firstName*.
+If we use this method on the *newFirstName* variable the value returned will be 8. Since 8 is greater than zero, the name "Franklin" will be assigned to *firstName*.
 
-If we went through this process again, this time using `“   “` as the value assigned to the parameter, we won’t be able to assign the new value to *firstName*.
-- Line 3 will turn `“   “` to `“”` using the *trim()* method.
+If we went through this process again, this time using `"   "` as the value assigned to the parameter, we won’t be able to assign the new value to *firstName*.
+- Line 3 will turn `"   "` to `""` using the *trim()* method.
 - Line 5 will return a length of 0 for *newFirstName*, thus making the condition statement read 0 > 0. 
 - Since this condition cannot be true, the statement on line 7 is not reached and the method ends.
 
@@ -340,7 +340,7 @@ Another option for when we can't set a value is we can notify the user that the 
     }
     else
     {
-        System.out.println(“The value submitted cannot be used. Please try again.”);
+        System.out.println("The value submitted cannot be used. Please try again.");
     }
  }
 ```
@@ -401,10 +401,10 @@ Let’s walk through how this example would work.
 - Assume that *letterGrade* = ‘B’.
 - The first comparison is on line 3. The statement will check to see if ‘B’ == ‘A’ which is false.
 - Next, the case on line 6 is evaluated. The comparison ‘B’ == ‘B’ is true.
-- Line 7 will execute, displaying the message “Well done!” in the terminal.
+- Line 7 will execute, displaying the message "Well done!" in the terminal.
 - Line 8 contains the `break` keyword. This stops the `switch` statement from making any more comparisons, and continues on with the rest of the program starting on line 23.
 
-If we remove the `break` keyword on line 8 and run the same example again with *letterGrade* set as ‘B’, we will see the message “Well done! Barely made it…” in the terminal. It is executing the print statement from case ‘C’ on line 10. Even though this is a logic error, we can use this to our advantage. 
+If we remove the `break` keyword on line 8 and run the same example again with *letterGrade* set as ‘B’, we will see the message "Well done! Barely made it…" in the terminal. It is executing the print statement from case ‘C’ on line 10. Even though this is a logic error, we can use this to our advantage. 
 
 Currently, the `switch` statement has cases for capital letters. If we were to pass in the value ‘b’, it would fall into the default case. If we wanted to check for both capital and lowercase letters, we can stack the cases on top of each other. The below example is doing this for the ‘A’ and ‘B’ cases.
 
@@ -451,11 +451,11 @@ Below is an `if/else` statement where we are checking a grade to see if the stud
 ```java
  if (grade > 70)
  {
- 	System.out.println(“You passed!”);
+ 	System.out.println("You passed!");
  }
  else
  {
- 	System.out.println(“Sorry, try again.”)
+ 	System.out.println("Sorry, try again.")
  }
 ```
 
@@ -465,16 +465,16 @@ We can convert this `if/else` structure to a ternary operator by pulling out the
 
 <caption><strong>Figure 4.5: If/else statement restructured as a ternary operator.</strong></caption>
 
-![Diagram breaking down a Java ternary operator expression into three parts with red brackets: 'grade > 70' is labeled 'condition', '\"You passed!\"' is labeled 'What's printed for true result', and '\"Sorry, try again.\"' is labeled 'What's printed for false result'. The complete ternary operator is `grade > 70 ? “You passed!” : “Sorry, try again.”;`](./assets/4-5_TernaryOperator.png)
+![Diagram breaking down a Java ternary operator expression into three parts with red brackets: 'grade > 70' is labeled 'condition', '\"You passed!\"' is labeled 'What's printed for true result', and '\"Sorry, try again.\"' is labeled 'What's printed for false result'. The complete ternary operator is `grade > 70 ? "You passed!" : "Sorry, try again.";`](./assets/4-5_TernaryOperator.png)
  
 
 Notice that the call to *System.out.println()* was left out. We can use the ternary operator as the parameter needed for the *println()* method to function.
 
 ```java
-System.out.println(grade > 70 ? “You passed!” : “Sorry, try again.”);
+System.out.println(grade > 70 ? "You passed!" : "Sorry, try again.");
 ```
 
-Once the ternary operator is evaluated, the end result is passed into the *println()* method. If *grade* is 85, the phrase “You passed!” will be sent into the *println()* method. If *grade* is 65, the phrase “Sorry, you should try again.” will be used.
+Once the ternary operator is evaluated, the end result is passed into the *println()* method. If *grade* is 85, the phrase "You passed!" will be sent into the *println()* method. If *grade* is 65, the phrase "Sorry, you should try again." will be used.
 
 Ternary operators are useful only if you have an either/or situation. `else if` blocks cannot be incorporated into a ternary operator.
 

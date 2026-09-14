@@ -81,17 +81,17 @@ These brackets have a dual purpose. When you declare an array, you use these bra
 If you want to assign a value to a particular index, you’ll call the array on the left side of the assignment operator, passing in the index you want to use. On the right side, you’ll state the value you want to store:
 
 ```java
- roster[0] = “Jenny”; //first element
- roster[1] = “Franklin”; //second element
- roster[2] = “Jake”; //third element
+ roster[0] = "Jenny"; //first element
+ roster[1] = "Franklin"; //second element
+ roster[2] = "Jake"; //third element
 ```
 
 To retrieve a value stored at a particular index, you’ll use the same format as above like you would for any other variable.
 
 ```java
- System.out.println(“First student: “ + roster[0]);
- System.out.println(“Second student: “ + roster[1]);
- System.out.println(“Third student: “ + roster[2]);
+ System.out.println("First student: " + roster[0]);
+ System.out.println("Second student: " + roster[1]);
+ System.out.println("Third student: " + roster[2]);
 ```
 
 <caption><strong>Console Output:</strong></caption>
@@ -107,11 +107,11 @@ You can also pass in an int variable that represents the index value.
 ```java
  int index = 1;
 
- roster[0] = “Jenny”; //first element
- roster[1] = “Franklin”; //second element
- roster[2] = “Jake”; //third element
+ roster[0] = "Jenny"; //first element
+ roster[1] = "Franklin"; //second element
+ roster[2] = "Jake"; //third element
 
- System.out.println(“Student: “ + roster[index]);
+ System.out.println("Student: " + roster[index]);
 ```
 
 <caption><strong>Console Output:</strong></caption>
@@ -159,7 +159,7 @@ A situation where the array’s length field would be useful is when you want to
  }
  else 
  {
- 	System.out.println(“Invalid index. Please try again.”);
+ 	System.out.println("Invalid index. Please try again.");
  }
 ```
 
@@ -175,7 +175,7 @@ Java’s *main()* method is the default method of an application. Almost all of 
 ```java
  public static void main(String[] args)
  {
-	System.out.println(“Hello World”);
+	System.out.println("Hello World");
  }
 ```
 
@@ -209,16 +209,16 @@ A common use for this is running an application in debug mode. When the applicat
 ```java
  public static void main(String[] args)
  {
-	System.out.println(“Hello World”);
+	System.out.println("Hello World");
 
-	if(args[0].equals(“debugmode”))
+	if(args[0].equals("debugmode"))
 	{
-		System.out.println(“You have now entered debug mode”);
+		System.out.println("You have now entered debug mode");
 	}
  }
 ```
 
-If the *main()* method is called without any arguments, only “Hello World” will be displayed to the terminal. If “debugmode” is the first argument passed into the *main()* method call, the “Hello World” and “You have now entered debugmode mode” phrases will be shown. 
+If the *main()* method is called without any arguments, only "Hello World" will be displayed to the terminal. If "debugmode" is the first argument passed into the *main()* method call, the "Hello World" and "You have now entered debugmode mode" phrases will be shown. 
 
 The arguments used in your application are customizable to fit your needs. It is not required to operate a successful application, but it does allow you unlock features and runtime modes that are normally hidden from end users. 
 
@@ -270,7 +270,7 @@ In the declaration statement there are two sets of square brackets. When we are 
 ```
 
 ## Accessing 2D Array Elements
-2D array elements are at the intersection of the row and column indices. For example, using the sample data table, “Olivia” is located at the intersection of row index 0 and column index 0. “Biology” is located at the intersection of row index 3 and column index 2.
+2D array elements are at the intersection of the row and column indices. For example, using the sample data table, "Olivia" is located at the intersection of row index 0 and column index 0. "Biology" is located at the intersection of row index 3 and column index 2.
 
 
 <table>
@@ -313,24 +313,24 @@ In the declaration statement there are two sets of square brackets. When we are 
 
 
 
-In the code to assign “Olivia” to the first element in the row and in the first column, we would set up the assignment statement like this:
+In the code to assign "Olivia" to the first element in the row and in the first column, we would set up the assignment statement like this:
 
 ```java
- studentContactInfo[0][0] = “Olivia”;
+ studentContactInfo[0][0] = "Olivia";
 ```
 
-Likewise, to assign “Biology” to the element in the last row and last column, the assignment statement would look like this:
+Likewise, to assign "Biology" to the element in the last row and last column, the assignment statement would look like this:
 
 ```java
- studentContactInfo[3][2] = “Biology”;
+ studentContactInfo[3][2] = "Biology";
 ```
 
 Retrieving information follows the same format as a single array:
 
 ```java
- System.out.println(“First Name: “ + studentContactInfo[1][0]);
- System.out.println(“Last Name: “ + studentContactInfo[1][1]);
- System.out.println(“Major: “ + studentContactInfo[1][2]);
+ System.out.println("First Name: " + studentContactInfo[1][0]);
+ System.out.println("Last Name: " + studentContactInfo[1][1]);
+ System.out.println("Major: " + studentContactInfo[1][2]);
 ```
 
 <caption><strong>Console Output:</strong></caption>

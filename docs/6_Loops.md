@@ -27,31 +27,31 @@ In the code segment below, we are repeating the same series of tasks over and ov
 
  if (total >= 2)
  {
-  	System.out.println(“Does not meet the condition”);
+  	System.out.println("Does not meet the condition");
  }
  else
  {
- 	System.out.println(“Meets the condition”); 
+ 	System.out.println("Meets the condition"); 
  }
  total++;
 
  if (total >= 2)
  {
- 	System.out.println(“Does not meet the condition”);
+ 	System.out.println("Does not meet the condition");
  }	
  else
  {
- 	System.out.println(“Meets the condition”);
+ 	System.out.println("Meets the condition");
  }	
  
  total++;
  if (total >= 2)
  {
- 	System.out.println(“Does not meet the condition”); 
+ 	System.out.println("Does not meet the condition"); 
  }
  else
  {
- 	System.out.println(“Meets the condition”);
+ 	System.out.println("Meets the condition");
  }
  total++;
 ```
@@ -61,11 +61,11 @@ This is an inefficient way to handle this scenario. What we can do is isolate th
 ```java
  if (total >= 2)
  {
-	System.out.println(“Does not meet the condition”);
+	System.out.println("Does not meet the condition");
  }
  else 
  {
-	System.out.println(“Meets the condition”);
+	System.out.println("Meets the condition");
  }	
  total++;
 ```
@@ -88,11 +88,11 @@ Taking our original scenario, we can place our isolated statements in the `while
  {
 	if (total >= 2)
 	{
-		System.out.println(“Does not meet the condition”);
+		System.out.println("Does not meet the condition");
 	}
 	else
 	{
- 		System.out.println(“Meets the condition”);
+ 		System.out.println("Meets the condition");
  	}
  	total++;
  }
@@ -108,11 +108,11 @@ We can then update the `while` loop’s condition to repeat its tasks until the 
  {
 	if (total >= 2)
 	{
-		System.out.println(“Does not meet the condition”);
+		System.out.println("Does not meet the condition");
 	}
 	else
 	{
- 		System.out.println(“Meets the condition”);
+ 		System.out.println("Meets the condition");
  	}
  	total++;
  }
@@ -124,11 +124,11 @@ Below is a chart of what the state of *total* is along with what the terminal ou
 
 | Value of total	| Terminal Output |
 | ----- | -----|
-| 0	| “Does not meet the condition” |
-| 1	| “Does not meet the condition” |
-| 2	| “Meets the condition” |
-| 3	| “Meets the condition” |
-| 4	| “Meets the condition” |
+| 0	| "Does not meet the condition" |
+| 1	| "Does not meet the condition" |
+| 2	| "Meets the condition" |
+| 3	| "Meets the condition" |
+| 4	| "Meets the condition" |
 
 
 Once the value of *total* is 5, the `while` loop condition is no longer met, the statements within the brackets on line 4 and 14 are ignored, and the application continues its execution.
@@ -136,7 +136,7 @@ Once the value of *total* is 5, the `while` loop condition is no longer met, the
 ## Infinite Loop 
 One thing that is bound to happen to every programmer is the accidental creation of an ***infinite loop***. This is something that is especially easy to do in `while` loops. Since the loop continues its process while a condition statement is true, you need to provide a way inside that loop to make it false. Otherwise, the loop will continue until the application is terminated.
 
-Think of it this way. Imagine you’re on a roller coaster. In order to go around the track, you need to have tickets. For the first ride, you have 3 tickets in your hand. You meet the condition to go around the track. You get back to the station, you still meet the condition with the 3 tickets, and you go around again. And again. And again. Unless you give the station attendant a ticket either at the start of the ride, or at the end, you’ll continue to stay on that roller coaster. By giving away those tickets each time, you get to a point where you have none left. Then, the original condition of “you need tickets to ride the coaster” becomes false.
+Think of it this way. Imagine you’re on a roller coaster. In order to go around the track, you need to have tickets. For the first ride, you have 3 tickets in your hand. You meet the condition to go around the track. You get back to the station, you still meet the condition with the 3 tickets, and you go around again. And again. And again. Unless you give the station attendant a ticket either at the start of the ride, or at the end, you’ll continue to stay on that roller coaster. By giving away those tickets each time, you get to a point where you have none left. Then, the original condition of "you need tickets to ride the coaster" becomes false.
 
 Looking at this from a syntax perspective, the code segment below is an example of an infinite loop.
 
@@ -145,20 +145,20 @@ Looking at this from a syntax perspective, the code segment below is an example 
 
  while (countdown > 0)
  {
-	System.out.println(“Hello World!”);
+	System.out.println("Hello World!");
  }
 ```
 
 There isn’t a statement within the `while` loop’s body that changes the *countdown* value. This is what’s causing the infinite loop to occur.
 
-If we add a statement to line 6 that decrements the value of *countdown*, after “Hello World!” is printed to the terminal 5 times, the loop will end.
+If we add a statement to line 6 that decrements the value of *countdown*, after "Hello World!" is printed to the terminal 5 times, the loop will end.
 
 ```java
  int countdown = 5;
 
  while (countdown > 0)
  {
-	System.out.println(“Hello World!”);
+	System.out.println("Hello World!");
 	countdown--;
  }
 ```
@@ -226,6 +226,7 @@ When this code segment runs, the user option menu is displayed in the terminal.
  1 - Add a new course
  2 - Enroll a student
  3 - Exit Course Management System
+ > 
 ```
 
 The application then waits for a response from the end user. In this scenario, the end user provides the value 5.
@@ -237,7 +238,7 @@ The application then waits for a response from the end user. In this scenario, t
  1 - Add a new course
  2 - Enroll a student
  3 - Exit Course Management System
- 5
+ > 5
 ```
 
 The provided value does not match any of the cases listed. The default case is triggered displaying the terminal message from line 28. 
@@ -249,7 +250,7 @@ The provided value does not match any of the cases listed. The default case is t
  1 - Add a new course
  2 - Enroll a student
  3 - Exit Course Management System
- 5
+ > 5
  That is not a valid menu option.
 ```
 
@@ -262,7 +263,7 @@ The *validOptionSelected* variable remains false, thus matching the condition st
  1 - Add a new course
  2 - Enroll a student
  3 - Exit Course Management System
- 5
+ > 5
  That is not a valid menu option.
  Please select from the following options:
  1 - Add a new course
@@ -296,11 +297,11 @@ Below is the `while` loop that we used earlier in the module. Lines 1, 3, and 13
  {
 	if (total >= 2)
 	{
-		System.out.println(“Does not meet the condition”);
+		System.out.println("Does not meet the condition");
 	}
 	else
 	{
- 		System.out.println(“Meets the condition”);
+ 		System.out.println("Meets the condition");
  	}
  	total++; //This is your post-loop action
  }
@@ -313,11 +314,11 @@ We are able to reorganize these components into a `for` loop and be able to achi
  {
  	if (total >= 2)
  	{
- 		System.out.println(“Does not meet the condition”);
+ 		System.out.println("Does not meet the condition");
  	}
  	else
 	{
- 		System.out.println(“Meets the condition”);
+ 		System.out.println("Meets the condition");
  	}
  }
 ```
@@ -339,10 +340,10 @@ The structure of a for-each loop is shown below.
  }
 ```
 
-If we were to create an array of names, we can use a for-each loop to display them to the terminal. In the for-each loop header below, you can read this as “For each individual student in the course roster”. 
+If we were to create an array of names, we can use a for-each loop to display them to the terminal. In the for-each loop header below, you can read this as "For each individual student in the course roster". 
 
 ```java
- String[] roster = new String[] {“John”, “Katie”, “Parker”, “Ayden”};
+ String[] roster = new String[] {"John", "Katie", "Parker", "Ayden"};
 
  for (String studentName : roster)
  {
@@ -350,17 +351,17 @@ If we were to create an array of names, we can use a for-each loop to display th
  }
 ```
 
-The first time this loop executes it will check to see if an item exists in the array. It sees that there is something available and grabs the first name out of *roster*, “John”. The name is converted to upper case and displayed in the terminal. At the start of the next loop, it checks to see if there is an item next in line. There is, and it prints “Katie” in all caps. This process repeats until there is nothing left for the loop header to grab from the array. Table 6.2 shows what iteration the for-each structure is on, what item is being processed, and what output would be shown in the terminal.
+The first time this loop executes it will check to see if an item exists in the array. It sees that there is something available and grabs the first name out of *roster*, "John". The name is converted to upper case and displayed in the terminal. At the start of the next loop, it checks to see if there is an item next in line. There is, and it prints "Katie" in all caps. This process repeats until there is nothing left for the loop header to grab from the array. Table 6.2 shows what iteration the for-each structure is on, what item is being processed, and what output would be shown in the terminal.
 
 
 <caption><strong>Table 6.2: total state table and associated output.</strong></caption>
 
 | Iteration	| Item in List Being Processed	| Terminal Output |
 | ----- | ----- | ----- |
-| 1	| “John”	| “JOHN” |
-| 2	| “Katie”	| “KATIE” |
-| 3	| “Parker”	| “PARKER” |
-| 4	| “Ayden”	| “AYDEN” |
+| 1	| "John"	| "JOHN" |
+| 2	| "Katie"	| "KATIE" |
+| 3	| "Parker"	| "PARKER" |
+| 4	| "Ayden"	| "AYDEN" |
 | 5	| Nothing remains in the collection. Loop concludes and continues on with the rest of the application. | |
 
 
@@ -393,7 +394,7 @@ Take the code segment below. We have an array of four names, and the for-each lo
  Ayden
 ```
 
-Let’s alter this and say that we want to stop processing data in the names array once we come across the name “Parker”. We’ll add an `if` statement within the for-each loop that compares the current value pulled from the array to the String “Parker”. If it is a match, then we’ll use the `break` keyword. 
+Let’s alter this and say that we want to stop processing data in the names array once we come across the name "Parker". We’ll add an `if` statement within the for-each loop that compares the current value pulled from the array to the String "Parker". If it is a match, then we’ll use the `break` keyword. 
 
 ```java
  String[] names = new String[]{"John", "Katie", "Parker", "Ayden"};
@@ -409,7 +410,7 @@ Let’s alter this and say that we want to stop processing data in the names arr
  }
 ```
 
-When we run this method, the names “John” and “Katie” are retrieved from the array and used for comparison in the condition statement, which evaluates to false. The names are then printed to the terminal. When the name “Parker” is retrieved from the array and compared in the condition statement, the name is a match and the `break` keyword is executed. The for-each loop stops and continues with the rest of the application. It does not print the name “Parker” to the terminal, and the last name “Ayden” is not processed at all. The resulting output is shown below.
+When we run this method, the names "John" and "Katie" are retrieved from the array and used for comparison in the condition statement, which evaluates to false. The names are then printed to the terminal. When the name "Parker" is retrieved from the array and compared in the condition statement, the name is a match and the `break` keyword is executed. The for-each loop stops and continues with the rest of the application. It does not print the name "Parker" to the terminal, and the last name "Ayden" is not processed at all. The resulting output is shown below.
 
 <caption><strong>Console Output:</strong></caption>
 
@@ -419,7 +420,7 @@ When we run this method, the names “John” and “Katie” are retrieved from
 ```
 
 ## continue
-If you want to skip over one iteration and process the remaining data set, use `continue`. Below is the same code from the previous example, but this time we are swapping out the `break` keyword for `continue`. The names “John” and “Katie” are processed the same way as before. When the name “Parker” is reached and the `continue` keyword is executed, the for-each loop stops its current iteration and moves on to the next name in the array. “Ayden” is retrieved, evaluated, then printed to the terminal.
+If you want to skip over one iteration and process the remaining data set, use `continue`. Below is the same code from the previous example, but this time we are swapping out the `break` keyword for `continue`. The names "John" and "Katie" are processed the same way as before. When the name "Parker" is reached and the `continue` keyword is executed, the for-each loop stops its current iteration and moves on to the next name in the array. "Ayden" is retrieved, evaluated, then printed to the terminal.
 
 ```java
  String[] names = new String[]{"John", "Katie", "Parker", "Ayden"};
@@ -453,7 +454,7 @@ In this process you are looking through a collection of cabinets. You open only 
 ```
  while (object has not been found)
  {
- 	if(object in cabinet matches the “red coffee mug” description)
+ 	if(object in cabinet matches the "red coffee mug" description)
  	{
   		End my search
  	}
@@ -469,17 +470,17 @@ If we wanted to do this for a student roster, where we want to look at each name
 
 ```java
  boolean studentFound = false;
- String[] roster = new String[] {“John”, “Katie”, “Parker”, “Ayden”};
+ String[] roster = new String[] {"John", "Katie", "Parker", "Ayden"};
  int index = 0;
 
  while (studentFound != true)
  {
  	if(index < roster.length)
  	{
-		if(roster[index].equals(“Parker”))
+		if(roster[index].equals("Parker"))
  		{
  			studentFound = true;
-  			System.out.println(“Student has been found”);
+  			System.out.println("Student has been found");
  		}
 	}
  	else if(index == roster.length)
@@ -492,20 +493,20 @@ If we wanted to do this for a student roster, where we want to look at each name
  
  if (studentFound == false)
  {
- 	System.out.println(“Student has not been found”);
+ 	System.out.println("Student has not been found");
  }
 ```
 
-This loop uses a boolean value, often called a flag, that is being used to denote whether or not an item has been found. The loop also uses a counter variable called *index* that keeps track of what index we’re looking at in the roster array. The `while` loop condition checks the *studentFound* boolean flag. If the student has not been found, the application proceeds with the comparison statements. If the value of *index* is a valid index for the roster array, we’ll pull that value from the array at that index. We’ll then compare it to the name we’re looking for, “Parker”.  If it is a match, we’ll flip the value of the flag, stating that the student has been found, and notify the end user. If it was not a match, the *index* value is incremented, and the loop starts again on line 5. Once we increase the *index* variable to be the same as the array’s length, meaning we have no more valid indices left to use, we’ll use the `break` keyword to leave the `while` loop. Otherwise, we’ll end up with an infinite loop. If the student was never found, we’ll execute the contents of the if statement on line 25. Table 6.3 shows the state changes of the *index*, *roster*, and *studentFound* variables throughout the search function.
+This loop uses a boolean value, often called a flag, that is being used to denote whether or not an item has been found. The loop also uses a counter variable called *index* that keeps track of what index we’re looking at in the roster array. The `while` loop condition checks the *studentFound* boolean flag. If the student has not been found, the application proceeds with the comparison statements. If the value of *index* is a valid index for the roster array, we’ll pull that value from the array at that index. We’ll then compare it to the name we’re looking for, "Parker".  If it is a match, we’ll flip the value of the flag, stating that the student has been found, and notify the end user. If it was not a match, the *index* value is incremented, and the loop starts again on line 5. Once we increase the *index* variable to be the same as the array’s length, meaning we have no more valid indices left to use, we’ll use the `break` keyword to leave the `while` loop. Otherwise, we’ll end up with an infinite loop. If the student was never found, we’ll execute the contents of the if statement on line 25. Table 6.3 shows the state changes of the *index*, *roster*, and *studentFound* variables throughout the search function.
 
 
 <caption><strong>Table 6.3: State table for student search.</strong></caption>
 
 | Value of index	| Name Pulled From roster Array	| End Result of Inner if Statement Condition (Line 9)	| Value of studentFound| 
 | ----- | ----- | ----- | ----- |
-| 0	| “John”	| false	| false| 
-| 1	| “Katie”	| false	| false| 
-| 2	| “Parker”	| true	| true| 
+| 0	| "John"	| false	| false| 
+| 1	| "Katie"	| false	| false| 
+| 2	| "Parker"	| true	| true| 
 | 3	| while loop does not continue. Condition is not met. if statement  outside of the while loop on line 23 does not execute as well since the student has been found.| | | 
 
 

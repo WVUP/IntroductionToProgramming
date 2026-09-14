@@ -1,4 +1,5 @@
-# Appendix 1: Static Variables and Methods
+# Appendix I: Static Variables and Methods
+
 Classes consist of fields and methods. When an instance of a class is created, that instance gets its own copy of those fields and methods. This means different instances of the same class will have the same fields, but they can have their own unique values. Take a Person class as an example. Assume it has three fields: a first name, a last name, and a birthday.
 
 ```java
