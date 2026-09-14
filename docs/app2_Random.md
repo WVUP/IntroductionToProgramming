@@ -53,14 +53,12 @@ The *nextInt()* method generates and returns a random value that is available fo
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- -761569533
- 857028999
- -675882053
- 945728358
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+-761569533
+857028999
+-675882053
+945728358
+</pre></figure>
 
 *nextInt()* is an overloaded method in the Random class. It can accept an int which is then used to set an upper bound, or a maximum value, that can be generated. When this upper bound is provided, the range of values that can be used is from 0 (inclusive) to the upper bound (exclusive). For example, if I ran the same code, this time providing an upper bound of 10, the possible values that can be returned are 0 up to, but not including, 10.
 
@@ -71,14 +69,12 @@ The *nextInt()* method generates and returns a random value that is available fo
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- 5
- 8
- 0
- 1
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+5
+8
+0
+1
+</pre></figure>
 
 Using the overloaded *nextInt()* method is great when you want to either provide a small value, such as the outcome after rolling a die. It’s also useful when you have a limited number of options to select from, like printing a greeting from an array or ArrayList for an NPC.
 
@@ -92,11 +88,9 @@ Using the overloaded *nextInt()* method is great when you want to either provide
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Hi
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Hi
+</pre></figure>
 
 
 ## nextBoolean()
@@ -109,14 +103,12 @@ If you are wanting a randomized true or false value, *nextBoolean()* is the meth
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- false
- true
- true
- false
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+false
+true
+true
+false
+</pre></figure>
 
 *nextBoolean()* is also useful if you are wanting to simulate coin flips.
 
@@ -134,12 +126,10 @@ If you are wanting a randomized true or false value, *nextBoolean()* is the meth
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Let’s see if you are a winner…
- You win the grand prize!!!
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Let’s see if you are a winner…
+You win the grand prize!!!
+</pre></figure>
 
 # Summary
 The Random class can make your application’s functionality unpredictable in the sense that the inputs and outputs generated don’t follow an easily determined pattern. However, remember that nothing in computer science is truly random. We as programmers tell the computer what algorithms to use. There is a pattern to the madness, we just make it difficult to see.

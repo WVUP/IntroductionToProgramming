@@ -219,57 +219,50 @@ This `do-while` structure is perfect when you are presenting an end user with op
 
 When this code segment runs, the user option menu is displayed in the terminal.
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Please select from the following options:
- 1 - Add a new course
- 2 - Enroll a student
- 3 - Exit Course Management System
- > 
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Please select from the following options:
+1 - Add a new course
+2 - Enroll a student
+3 - Exit Course Management System
+<strong>></strong> 
+</pre></figure>
 
 The application then waits for a response from the end user. In this scenario, the end user provides the value 5.
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Please select from the following options:
- 1 - Add a new course
- 2 - Enroll a student
- 3 - Exit Course Management System
- > 5
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Please select from the following options:
+1 - Add a new course
+2 - Enroll a student
+3 - Exit Course Management System
+<strong>> 5</strong>
+</pre></figure>
 
 The provided value does not match any of the cases listed. The default case is triggered displaying the terminal message from line 28. 
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Please select from the following options:
- 1 - Add a new course
- 2 - Enroll a student
- 3 - Exit Course Management System
- > 5
- That is not a valid menu option.
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Please select from the following options:
+1 - Add a new course
+2 - Enroll a student
+3 - Exit Course Management System
+<strong>> 5</strong>
+That is not a valid menu option.
+</pre></figure>
 
 The *validOptionSelected* variable remains false, thus matching the condition statement on line 31. The loop is then executed again starting on line 6.
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Please select from the following options:
- 1 - Add a new course
- 2 - Enroll a student
- 3 - Exit Course Management System
- > 5
- That is not a valid menu option.
- Please select from the following options:
- 1 - Add a new course
- 2 - Enroll a student
- 3 - Exit Course Management System
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Please select from the following options:
+1 - Add a new course
+2 - Enroll a student
+3 - Exit Course Management System
+<strong>> 5</strong>
+That is not a valid menu option.
+Please select from the following options:
+1 - Add a new course
+2 - Enroll a student
+3 - Exit Course Management System
+<strong>></strong>
+</pre></figure>
 
 `do-while` loops are a great alternative to `while` loops when you want to execute a task at least once before evaluating a condition.
 
@@ -385,14 +378,12 @@ Take the code segment below. We have an array of four names, and the for-each lo
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- John
- Katie
- Parker
- Ayden
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+John
+Katie
+Parker
+Ayden
+</pre></figure>
 
 Let’s alter this and say that we want to stop processing data in the names array once we come across the name "Parker". We’ll add an `if` statement within the for-each loop that compares the current value pulled from the array to the String "Parker". If it is a match, then we’ll use the `break` keyword. 
 
@@ -412,12 +403,10 @@ Let’s alter this and say that we want to stop processing data in the names arr
 
 When we run this method, the names "John" and "Katie" are retrieved from the array and used for comparison in the condition statement, which evaluates to false. The names are then printed to the terminal. When the name "Parker" is retrieved from the array and compared in the condition statement, the name is a match and the `break` keyword is executed. The for-each loop stops and continues with the rest of the application. It does not print the name "Parker" to the terminal, and the last name "Ayden" is not processed at all. The resulting output is shown below.
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- John
- Katie
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+John
+Katie
+</pre></figure>
 
 ## continue
 If you want to skip over one iteration and process the remaining data set, use `continue`. Below is the same code from the previous example, but this time we are swapping out the `break` keyword for `continue`. The names "John" and "Katie" are processed the same way as before. When the name "Parker" is reached and the `continue` keyword is executed, the for-each loop stops its current iteration and moves on to the next name in the array. "Ayden" is retrieved, evaluated, then printed to the terminal.
@@ -436,13 +425,11 @@ If you want to skip over one iteration and process the remaining data set, use `
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- John
- Katie
- Ayden 
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+John
+Katie
+Ayden 
+</pre></figure>
 
 # Searching
 One of the more common uses of loops in entry-level applications is iterating through data to find something. `while` loops are fantastic for this type of functionality. Since it is controlled by a condition statement, it gives you an easy way to leave your looping structure once you’ve found what you’re looking for.

@@ -475,11 +475,9 @@ Currently in our Student class we have two instance variables that store a stude
  System.out.print(lastName);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- EricBryon
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+EricBryon
+</pre></figure>
 
 If we use *println()*, the name is legible, but broken up onto two lines.
 
@@ -490,12 +488,10 @@ If we use *println()*, the name is legible, but broken up onto two lines.
  System.out.println(lastName);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Eric
- Bryon
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Eric
+Bryon
+</pre></figure>
 
 
 Whether it's displayed on a computer screen or printed on a piece of paper, names are usually listed on a single line separated by either a space or a comma. This is where concatenation comes into play. Using the concatenation operator `+` we can combine the variables with another string to put the student's name in the correct format.
@@ -504,11 +500,9 @@ Whether it's displayed on a computer screen or printed on a piece of paper, name
  System.out.print(firstName + " " + lastName);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Eric Bryon
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Eric Bryon
+</pre></figure>
 
 
 We can also change up the format listing the student's last name first.
@@ -517,11 +511,9 @@ We can also change up the format listing the student's last name first.
  System.out.print(lastName + ", "+ firstName);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Bryon, Eric
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Bryon, Eric
+</pre></figure>
 
 We can also provide context information stating that this is a student's name.
 
@@ -529,11 +521,9 @@ We can also provide context information stating that this is a student's name.
  System.out.print("Student's name: " + lastName + ", " + firstName);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Student's name: Bryon, Eric
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Student's name: Bryon, Eric
+</pre></figure>
 
 
 ## Strings and Integers
@@ -545,11 +535,9 @@ If an equation comes before a String, the expression is resolved first then the 
  System.out.print(2 + 5 + "Hello");
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- 7Hello
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+7Hello
+</pre></figure>
 
 If a String comes before an equation, the compiler treats each integer as separate entities concatenating it with the previous String.
 
@@ -557,11 +545,9 @@ If a String comes before an equation, the compiler treats each integer as separa
  System.out.print("Hello" + 2 + 5);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Hello25
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Hello25
+</pre></figure>
 
 ## Escape Characters
 ***Escape characters*** provide additional formatting capabilities to strings. A few of the escape characters are listed in Table 3.3.
@@ -583,12 +569,10 @@ The new line character `\n` acts similar to println(). It moves the starting poi
  System.out.print("Hello\nWorld");
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Hello
- World
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Hello
+World
+</pre></figure>
 
 
 Tab `\t` inserts an indentation in your statement similar to hitting tab on your keyboard.
@@ -597,11 +581,9 @@ Tab `\t` inserts an indentation in your statement similar to hitting tab on your
  System.out.print("Hello\tWorld");
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Hello	World
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Hello	World
+</pre></figure>
 
 Using the double quote escape character `\"` allows you to use double quotes within a String. Without the escape character the compiler thinks that the String ends after 'o'. The escape character allows us to bypass a normal operation in this case.
 
@@ -609,11 +591,9 @@ Using the double quote escape character `\"` allows you to use double quotes wit
  System.out.print("Hello \"World\"");
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Hello "World"
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Hello "World"
+</pre></figure>
 
 Other escape characters are available in [Oracle's Java tutorials](https://docs.oracle.com/javase/tutorial/java/data/characters.html).
 

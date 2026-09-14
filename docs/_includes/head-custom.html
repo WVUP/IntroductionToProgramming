@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   document.querySelectorAll('pre code').forEach((block) => {
     const lines = block.innerHTML.split('\n');
     const numberedLines = lines.map((line, index) => 
-      `<span class="line-number">${index + 1}</span>${line}`
+      `<span class="line-number">${index + 1}  </span>${line}`
     );
     block.innerHTML = numberedLines.join('\n');
   });

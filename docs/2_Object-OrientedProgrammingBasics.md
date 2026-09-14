@@ -448,11 +448,9 @@ Just like our algebra equation, every time our program comes across the variable
  System.out.println("hello " + "Levi"); 
 ```
 
-<caption><strong>Console Output:</strong></caption> 
-
-```
- hello Levi
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+hello Levi
+</pre></figure>
 
 ### null
 When you are dealing with any object data type, you need to make sure that you have initialized the variable before trying to add, modify, or delete the values assigned to it. By default, all declared object type variables are assigned to null. ***Null*** represents the absence of a value and structure. Let's go back to the house building example from earlier. Once the architect has created their blueprint, they go out and purchase land to build on. They are "declaring" that that property will have a house built on it. At that point there is no foundation, walls, or anything else that resembles a house.
@@ -476,11 +474,9 @@ Using the previous code example, we'll comment out the *firstName* assignment st
  System.out.println("hello " + null); 
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- hello null
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+hello null
+</pre></figure>
 
 
 Since we have the *firstName* variable declared, but have not yet initialized or assigned it a value, null will be used in place of a retrieved value. 
@@ -501,12 +497,10 @@ We are also able to change, or modify, the value assigned to our variables. To d
  System.out.println(hello "+ firstName); //output #2 
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- hello Levi
- hello Bentley
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+hello Levi
+hello Bentley
+</pre></figure>
 
 What happens to the originally assigned value, "Levi"? When a variable is assigned a new value, the old value is discarded. Whatever was assigned last is what stays. Eventually, Java's [garbage collection process](https://www.oracle.com/webfolder/technetwork/tutorials/obe/java/gc01/index.html) will run behind the scenes and remove the discarded data from the system. The details on how the garbage collector process works is out of scope at this time due to its complexity.
 

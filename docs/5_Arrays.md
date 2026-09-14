@@ -94,13 +94,11 @@ To retrieve a value stored at a particular index, you’ll use the same format a
  System.out.println("Third student: " + roster[2]);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- First student: Jenny
- Second student: Franklin
- Third student: Jake
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+First student: Jenny
+Second student: Franklin
+Third student: Jake
+</pre></figure>
 
 You can also pass in an int variable that represents the index value.
 
@@ -114,11 +112,9 @@ You can also pass in an int variable that represents the index value.
  System.out.println("Student: " + roster[index]);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Student: Franklin
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Student: Franklin
+</pre></figure>
 
 # Length Field
 When we initialize arrays and provide its starting element size, that value is stored in the array’s *length* field. This is a constant field, meaning once a value has been set it cannot change. This is the primary reason why arrays have to be recreated if more elements are needed.
@@ -131,11 +127,9 @@ This field is one that can be accessed directly. There are no methods available 
  System.out.println("Array length: " + studentIDs.length );
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Array length: 5
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Array length: 5
+</pre></figure>
 
 A situation where the array’s length field would be useful is when you want to make sure that the index you are using to access an element is valid.  For example, if I were to access the *studentIDs* array using index 6, I would get an ***ArrayIndexOutOfBoundsException***. 
 
@@ -163,11 +157,9 @@ A situation where the array’s length field would be useful is when you want to
  }
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Invalid index. Please try again.
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+Invalid index. Please try again.
+</pre></figure>
 
 # main() and Command Line Arguments
 Java’s *main()* method is the default method of an application. Almost all of the Java tutorials you’ll come across online use this method for demonstrations. It is a static method, meaning it stays with the class and is not a part of an instance. Below is an example of how the *main()* method is structured.
@@ -333,13 +325,11 @@ Retrieving information follows the same format as a single array:
  System.out.println("Major: " + studentContactInfo[1][2]);
 ```
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- First Name: Ethan
- Last Name: Reynolds
- Major: Civil Engineering
-```
+<figure><figcaption>Console Output:</figcaption><pre>
+First Name: Ethan
+Last Name: Reynolds
+Major: Civil Engineering
+</pre></figure>
 
 # Summary
 **Array:** A data structure used to store multiple values in sequential memory spaces, where each element is of a fixed size based on its data type. Arrays are declared using square brackets (`[]`) and can store a predefined number of elements. Once initialized, arrays cannot be resized without recreating them.
