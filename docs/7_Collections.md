@@ -233,7 +233,7 @@ The *size()* method returns the number of elements that are currently in the Arr
 studentNames.size();
 ```
 
-**Returned Value:** 3
+Returned Value: 3
 
 #### get()
 
@@ -243,7 +243,7 @@ The ArrayList collection retrieves values based on an index just like arrays. Th
 studentNames.get(1);
 ```
 
-**Returned Value:** Nathan
+Returned Value: Nathan
 
 #### remove()
 
@@ -309,7 +309,7 @@ The *contains()* method, which returns a boolean value, takes the object it's pr
 studentNames.contains("Nathan");
 ```
 
-**Returned Value:** false
+Returned Value: false
 
 #### clear()
 
@@ -327,7 +327,7 @@ The *isEmpty()* method checks the ArrayList to see if it contains any elements. 
 studentNames.isEmpty();
 ```
 
-**Returned Value:** true
+Returned Value: true
 
 
 <br>
