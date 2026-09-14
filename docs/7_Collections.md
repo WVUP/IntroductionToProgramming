@@ -182,8 +182,7 @@ studentNames = new ArrayList<>();
 
 ### Common ArrayList Methods
 
-<details>
-    <summary><strong>add()</strong></summary>
+#### add()
 
 When an item is added, the new values are added to the end of the ArrayList collection.
 
@@ -226,10 +225,7 @@ Travis
 Emily
 </pre></figure>
 
-</details>
-
-<details>
-    <summary><strong>size()</strong></summary>
+#### size()
 
 The *size()* method returns the number of elements that are currently in the ArrayList collection. When using this on the *studentNames* collection, the method will return the value 3.
 
@@ -237,12 +233,9 @@ The *size()* method returns the number of elements that are currently in the Arr
 studentNames.size();
 ```
 
-****Returned Value:**** 3
+**Returned Value:** 3
 
-</details>
-
-<details>
-    <summary><strong>get()</strong></summary>
+#### get()
 
 The ArrayList collection retrieves values based on an index just like arrays. The *get()* method, when provided with an index, will go to that position in the ArrayList and retrieve the data stored in that element.
 
@@ -250,12 +243,9 @@ The ArrayList collection retrieves values based on an index just like arrays. Th
 studentNames.get(1);
 ```
 
-****Returned Value:**** Nathan
+**Returned Value:** Nathan
 
-</details>
-
-<details>
-    <summary><strong>remove()</strong></summary>
+#### remove()
 
 The *remove()* method removes the element that matches either an object or an index you provide. Below is the code snippet to remove the name "Nathan". If we loop through the *studentNames* collection again, we see that "Nathan" has been removed from the ArrayList.
 
@@ -311,10 +301,7 @@ Travis
 
 The same process of shifting elements after removal occurs for this version as well.
 
-</details>
-
-<details>
-    <summary><strong>contains()</strong></summary>
+#### contains()
 
 The *contains()* method, which returns a boolean value, takes the object it's provided and checks to see if there is a matching object within the collection. If there is, the method returns true. Otherwise, it returns false.
 
@@ -322,12 +309,9 @@ The *contains()* method, which returns a boolean value, takes the object it's pr
 studentNames.contains("Nathan");
 ```
 
-****Returned Value:**** false
+**Returned Value:** false
 
-</details>
-
-<details>
-    <summary><strong>clear()</strong></summary>
+#### clear()
 
 The *clear()* method removes all elements from the collections.
 
@@ -335,10 +319,7 @@ The *clear()* method removes all elements from the collections.
 studentNames.clear();
 ```
 
-</details>
-
-<details>
-    <summary><strong>isEmpty()</strong></summary>
+#### isEmpty()
 
 The *isEmpty()* method checks the ArrayList to see if it contains any elements. If there are no elements present, the method returns true. Otherwise, it returns false.
 
@@ -346,9 +327,9 @@ The *isEmpty()* method checks the ArrayList to see if it contains any elements. 
 studentNames.isEmpty();
 ```
 
-****Returned Value:**** true
+**Returned Value:** true
 
-</details>
+
 
 
 > [!NOTE]
@@ -380,8 +361,7 @@ studentIDs = new HashSet<>();
 
 ### Common HashSet Methods
 
-<details>
-    <summary><strong>add()</strong></summary>
+#### add()
 
 When an item is added, the computer checks to see if that item already exists in the collection. If it does not exist, the item is added. If that item is already there, the computer ignores it.
 
@@ -409,10 +389,7 @@ for (Integer ID : studentIDs)
 728
 </pre></figure>
 
-</details>
-
-<details>
-    <summary><strong>size()</strong></summary>
+#### size()
 
 The *size()* method returns the number of elements that are currently in the HashSet collection. When using this on the *studentIDs* collection, the method will return the value 4.
 
@@ -420,12 +397,9 @@ The *size()* method returns the number of elements that are currently in the Has
 studentIDs.size();
 ```
 
-**Returned Value:** 4
+Returned Value: 4
 
-</details>
-
-<details>
-    <summary><strong>remove()</strong></summary>
+#### remove()
 
 The *remove()* method removes the element that matches the object you provide. Below is the code snippet to remove the ID 834. If we loop through the *studentIDs* collection again, we see that 834 has been removed from the HashSet.
 
@@ -444,10 +418,7 @@ for (Integer ID : studentIDs)
 728
 </pre></figure>
 
-</details>
-
-<details>
-    <summary><strong>contains()</strong></summary>
+#### contains()
 
 The *contains()* method takes the object it's provided and checks to see if there is a matching object within the collection. The end results are the same as for ArrayList.
 
@@ -455,12 +426,9 @@ The *contains()* method takes the object it's provided and checks to see if ther
 studentIDs.contains(133);
 ```
 
-**Returned Value:** true
+Returned Value: true
 
-</details>
-
-<details>
-    <summary><strong>clear()</strong></summary>
+#### clear()
 
 The *clear()* method removes all elements from the collections.
 
@@ -468,10 +436,7 @@ The *clear()* method removes all elements from the collections.
 studentIDs.clear();
 ```
 
-</details>
-
-<details>
-    <summary><strong>isEmpty()</strong></summary>
+#### isEmpty()
 
 The *isEmpty()* method checks the HashSet to see if it contains any elements, returning a boolean value as the end result.
 
@@ -479,9 +444,9 @@ The *isEmpty()* method checks the HashSet to see if it contains any elements, re
 studentIDs.isEmpty();
 ```
 
-**Returned Value:** true
+Returned Value: true
 
-</details>
+
 
 ## HashMap
 
@@ -506,8 +471,7 @@ studentRecords = new HashMap<>();
 
 ### Common HashMap Methods
 
-<details>
-    <summary><strong>put()</strong></summary>
+#### put()
 
 When you add an item to a HashMap, you need to provide the key you want to reference the entry by and the value associated with it. When an item is added, the computer checks to see if that key already exists in the collection. If it does not exist, the item is added. If that item is already there, the computer overwrites the value associated with it with the new data that’s provided. Below we are going to add an instance of the Student class using the student’s ID as the key
 
@@ -557,10 +521,8 @@ You can visualize this structure like a table. The left column being your keys, 
     </tbody>
 </table>
 
-</details>
 
-<details>
-    <summary><strong>keySet()</strong></summary>
+#### keySet()
 
 The *keySet()* method returns the keys used in the HashMap. This can be used later on with *get()* to loop through the HashMap values.
 
@@ -572,10 +534,7 @@ System.out.println(studentRecords.keySet());
 [834, 133, 654]
 </pre></figure>
 
-</details>
-
-<details>
-    <summary><strong>size()</strong></summary>
+#### size()
 
 The *size()* method returns the number of elements that are currently in the HashMap collection. When using this on the *studentRecords* collection, the method will return the value 3.
 
@@ -583,12 +542,9 @@ The *size()* method returns the number of elements that are currently in the Has
 studentRecords.size();
 ```
 
-**Returned Value:** 3
+Returned Value: 3
 
-</details>
-
-<details>
-    <summary><strong>get()</strong></summary>
+#### get()
 
 The *get()* method, when provided a key, will find the entry in the HashMap and return the value associated with it.
 
@@ -616,10 +572,7 @@ Smith, Emily
 Poe, Travis
 </pre></figure>
 
-</details>
-
-<details>
-    <summary><strong>remove()</strong></summary>
+#### remove()
 
 The *remove()* method removes the element that matches the key you provide. Below is the code snippet to remove the Student instance (value) stored at student ID (key) 834. If we loop through the *studentRecords* collection again, we see that key 834 and the associated Student instance has been removed.
 
@@ -637,10 +590,7 @@ Smith, Emily
 Poe, Travis
 </pre></figure>
 
-</details>
-
-<details>
-    <summary><strong>containsKey()</strong></summary>
+#### containsKey()
 
 Similar to the *contains()* in the previous collections, the *containsKey()* method checks to see if the provided key is used in the HashMap, returning true if it’s there.
 
@@ -648,12 +598,9 @@ Similar to the *contains()* in the previous collections, the *containsKey()* met
 studentRecords.containsKey(133);
 ```
 
-**Returned Value:** true
+Returned Value: true
 
-</details>
-
-<details>
-    <summary><strong>containsValue()</strong></summary>
+#### containsValue()
 
 In conjunction with the *containsKey()* method, the *containsValue()* method checks to see if the provided object is a value stored in the HashMap.
 
@@ -663,12 +610,9 @@ Student studentToFind = new Student("Emily", "Smith");
 studentRecords.containsKey(133);
 ```
 
-**Returned Value:** true
+Returned Value: true
 
-</details>
-
-<details>
-    <summary><strong>clear()</strong></summary>
+#### clear()
 
 The *clear()* method removes all entries from the collections.
 
@@ -676,10 +620,7 @@ The *clear()* method removes all entries from the collections.
 studentRecords.clear();
 ```
 
-</details>
-
-<details>
-    <summary><strong>isEmpty()</strong></summary>
+#### isEmpty()
 
 If there are no entries present in the HashMap, the method returns true. Otherwise, it returns false.
 
@@ -687,9 +628,9 @@ If there are no entries present in the HashMap, the method returns true. Otherwi
 studentRecords.isEmpty();
 ```
 
-**Returned Value:** true
+Returned Value: true
 
-</details>
+
 
 ## Method Summary for ArrayList, HashSet, and HashMap
 
