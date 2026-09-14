@@ -58,23 +58,26 @@ Next, use the Scanner variable reader to make an external call to the *nextInt()
 
 When line 3 is reached, the application will pause temporarily and will idle at the terminal screen. It’s waiting for a user to type in their response. 
 
-<caption><strong>Console Output:</strong></caption>
+<figure>
+  <figcaption>Console Output:</figcaption>
+  <pre><code>
+Please provide the number of students enrolled in the course:
+<strong>></strong>
+  </code></pre>
+</figure>
 
-```
- Please provide the number of students enrolled in the course:
- > 
-```
 
 
 As soon as the end user provides their answer and hits ‘enter’, the *nextInt()* method will execute. It will pull the integer from the terminal and assign it to the *nbrOfStudents* variable. However, the ‘enter’ keypress used in the input statement is left behind. The use of *nextLine()* on line 4 will consume that keypress so it will not be included in the next end user input. The remainder of the code will be executed afterwards.
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Please provide the number of students enrolled in the course:
- > 18
- 18 students enrolled in the course
-```
+<figure>
+  <figcaption>Console Output:</figcaption>
+  <pre><code>
+	Please provide the number of students enrolled in the course:
+	<strong>> 18</strong>
+	18 students enrolled in the course
+  </code></pre>
+</figure>
 
 
 ## nextLine()
@@ -90,23 +93,25 @@ Instead of bringing in a single value, the *nextLine()* method will bring in all
 
 When the above code is executed, it will idle again on line 3 waiting for the end user’s response.
 
-<caption><strong>Console Output:</strong></caption>
-
-```
- Please provide the name of the course:
- > 
-```
+<figure>
+  <figcaption>Console Output:</figcaption>
+  <pre><code>
+Please provide the name of the course:
+<strong>></strong>
+  </code></pre>
+</figure>
 
 
 When the user submits the prompted information, the remainder of the code is executed.
 
-<caption><strong>Console Output:</strong></caption>
-
-```
+<figure>
+  <figcaption>Console Output:</figcaption>
+  <pre><code>
  Please provide the name of the course:
- > Introduction to Programming
+ <strong>> Introduction to Programming</strong>
  Course name: Introduction to Programming
-```
+  </code></pre>
+</figure>
 
 You can also use this method if you want the user to provide commands. This, in combination with `do-while` loops, allows you to capture incorrect input and prompt the user for the correct input without risking application crashes.
 
