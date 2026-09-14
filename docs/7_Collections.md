@@ -332,8 +332,8 @@ studentNames.isEmpty();
 
 
 
-> [!NOTE]
-> The *size()*, *remove()*, *contains()*, *clear()*, and *isEmpty()* methods are available in most of the collections you’ll see in Java. They have similar functionality in those collections as well.
+{: .note }
+The *size()*, *remove()*, *contains()*, *clear()*, and *isEmpty()* methods are available in most of the collections you’ll see in Java. They have similar functionality in those collections as well.
 
 
 

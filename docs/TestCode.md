@@ -1,3 +1,37 @@
+# Current Console Output
+
+<caption><strong>Example Console Output:</strong></caption>
+
+    ``` 
+     ----------Transaction Summary----------
+     Pets adopted this visit: 3
+     Total adoption fees due: $76.25 
+    ```
+
+# Test Console - Bash
+
+<caption><strong>Example Console Output:</strong></caption>
+
+    ```
+     ----------Transaction Summary----------
+     Pets adopted this visit: 3
+     Total adoption fees due: $76.25 
+    ```
+
+# Test Console - HTML details/summary tag
+
+<details>
+	<summary><strong>Example Console Output:</strong></summary>
+	<p>	----------Transaction Summary----------</p>
+	<p>	Pets adopted this visit: 3</p>
+	<p>	Total adoption fees due: $76.25</p>
+	
+</details>
+
+
+
+<hr>
+
 # Regular
 
 ```java
