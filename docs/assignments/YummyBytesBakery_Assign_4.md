@@ -30,9 +30,7 @@ Includes content from [Appendix I: Static Variables and Methods](../app1_StaticV
 
 5.	Create a method called *mainMenuOptions()* that takes in no parameters and does not return anything. Here, print the following information to the terminal.
 
-	<caption><strong>Console Output:</strong></caption>
-
-	```
+	<figure><figcaption>Console Output:</figcaption><pre>
 	 Please select a numeric option from the menu.
 		1 - See our cookie menu
 		2 - See our muffin menu
@@ -42,7 +40,7 @@ Includes content from [Appendix I: Static Variables and Methods](../app1_StaticV
 		6 - Show display case
 		7 - Help
 		8 - Exit
-	```
+	</pre></figure>
 
 6.	Create a method called *open()* that takes in no parameters and does not return anything. The method should perform the following tasks:
 
@@ -51,9 +49,7 @@ Includes content from [Appendix I: Static Variables and Methods](../app1_StaticV
 
 7.	Create a case for each menu option listed in the *mainMenuOption()* terminal text. For each case, print the option selected to the terminal. If none of those options are selected, use the default case to display “Please make a different selection.” An example is shown below. 
 
-	<caption><strong>Console Output:</strong></caption>
-
-	```
+	<figure><figcaption>Console Output:</figcaption><pre>
 	 You have selected “See our doughnut menu”
 		Please make a different selection.
-	```
+	</pre></figure>

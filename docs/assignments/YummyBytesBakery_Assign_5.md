@@ -22,9 +22,7 @@
 
 5.	Create three methods called *printCookieCase()*, *printMuffinCase()*, and *printDoughnutCase()* that do not bring in or return values. In these methods, print a header then print the name (*getName()*) of all elements of their respective arrays as a numbered list. An example output for *printCookieCase()* should look like this:
 
-    <caption><strong>Console Output:</strong></caption>
-
-    ```
+    <figure><figcaption>Console Output:</figcaption><pre>
      ==COOKIE CASE==
      1) Chocolate Chip
      2) Chocolate Chip
@@ -38,6 +36,6 @@
      10) Chocolate Chip
      11) Chocolate Chip
      12) Chocolate Chip
-    ```
+    </pre></figure>
 
 6.	Update the switch statement in the *open()* method. Replace the print statement for case 6 (“Show display case”) from the previous assignment with calls to the *printCookieCase()*, *printMuffinCase()*, and *printDoughnutCase()* methods.

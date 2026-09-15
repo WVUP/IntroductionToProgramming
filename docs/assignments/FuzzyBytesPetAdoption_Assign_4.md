@@ -51,9 +51,7 @@ Includes content from [Appendix I: Static Variables and Methods](../app1_StaticV
 
 5.	Create a method called *applicationMenuOptions()* that takes in no parameters and does not return anything. Print the following information to the terminal. 
 
-	<caption><strong>Console Output:</strong></caption>
-
-	```
+	<figure><figcaption>Console Output:</figcaption><pre>
 	 Please select a numeric option from the menu.
 		1 – View Available Dogs
 		2 – View Available Cats
@@ -63,7 +61,7 @@ Includes content from [Appendix I: Static Variables and Methods](../app1_StaticV
 		6 – View all Pets
 		7 – Help
 		8 – Exit
-	```
+	</pre></figure>
 
 6.	Create a method called *open()* that takes in no parameters and does not return anything. The method should perform the following tasks: 
 
@@ -74,18 +72,14 @@ Includes content from [Appendix I: Static Variables and Methods](../app1_StaticV
 
 	- For cases 1, 2, 3, 5, 6, and 7 print a message to the terminal that the option has been selected. An example is shown below. 
 
-	<caption><strong>Console Output:</strong></caption>
-
-	```
+	<figure><figcaption>Console Output:</figcaption><pre>
 	 You have selected “View Available Dogs”
-	```
+	</pre></figure>
 
 	- For case 4, call the *displayAdoptionFees()* method. 
 	- For case 8, print a message to the terminal thanking the user for visiting. 
 	- If none of the numeric options 1-8 are selected, use the default case to display "Please select a numeric option from 1 to 8.” An example is shown below. 
 
-	<caption><strong>Console Output:</strong></caption>
-
-	```
+	<figure><figcaption>Console Output:</figcaption><pre>
 	 Please select a numeric option from 1 to 8
-	```
+	</pre></figure>

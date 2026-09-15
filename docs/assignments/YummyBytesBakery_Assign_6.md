@@ -12,9 +12,7 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
 
 2.	Create a *printHelp()* method that displays the following information:
 
-    <caption><strong>Console Output:</strong></caption>
-
-    ```        
+    <figure><figcaption>Console Output:</figcaption><pre>        
      Please select a number that corresponds with a menu option.
      Type 1 to see our cookie menu
      Type 2 to see our doughnut menu
@@ -24,7 +22,7 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
      Type 6 to see what's available
      Type 7 to see help menu (this menu)
      Type 8 to quit
-    ```
+    </pre></figure>
 
 3.	Modify case 7 ("Help") and the `default` case in the `switch` statement in the *open()* method. Replace the existing print statements with a call to the *printHelp()* method. 
 

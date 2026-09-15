@@ -33,21 +33,17 @@
 
 6.	Create three methods called *displayAvailableDogs()*, *displayAvailableCats()*, and *displayAvailableBirds()* that do not bring in or return any values. In these methods if a pet is available for adoption print a header, then print the information that corresponds with the values stored in the 2D array, otherwise print a statement saying there are no available pets of this type for adoption. An example output for *displayAvailableDogs()* should look like this if a dog is available:
 
-    <caption><strong>Console Output:</strong></caption>
-
-    ```
+    <figure><figcaption>Console Output:</figcaption><pre>
      ==AVAILABLE FOR ADOPTION==
      Name: Sparky
      Type: Dog
      Breed: German Shepherd
-    ```
+    </pre></figure>
 
     An example output for *displayAvailableDogs()* when no dogs are available:
 
-    <caption><strong>Console Output:</strong></caption>
-
-    ```
+    <figure><figcaption>Console Output:</figcaption><pre>
      Sorry! There are currently no dogs available for adoption. 
-    ```
+    </pre></figure>
 
 7.	Update the switch statement in the open() method. Replace the print statements in    Cases 1,2, and 3 with calls to their corresponding displayAvailableDogs(), displayAvailableCats(), and displayAvailableBirds() methods. 

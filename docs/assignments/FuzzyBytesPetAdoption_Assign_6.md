@@ -12,9 +12,7 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
 
 2.	Create a *printHelp()* method that displays the following information:
 
-    <caption><strong>Console Output:</strong></caption>
-
-    ``` 
+    <figure><figcaption>Console Output:</figcaption><pre> 
      Please select the number that corresponds with a menu option.
      Type 1 to view a list of dogs that are available for adoption
      Type 2 to view a list of cats that are available for adoption
@@ -24,7 +22,7 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
      Type 6 to view all pets even those no longer available for adoption
      Type 7 to view the help menu
      Type 8 to quit 
-    ```
+    </pre></figure>
 
 3.	Modify case 7 ("Help") and the `default` case in the `switch` statement in the *open()* method.
 
@@ -37,9 +35,7 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
     - For each pet, print out the Name, Type, Breed/Species, and Status with appropriate labels
     - Add a blank line between each pet for readability
 
-    <caption><strong>Example Console Output:</strong></caption>
-
-    ``` 
+    <figure><figcaption>Console Output:</figcaption><pre>
      ----------Pet Inventory----------
      Name: Sparky
      Type: Dog
@@ -48,7 +44,7 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
      
      Name: Snowball
      ...
-    ```
+    </pre></figure>
 
 5.	Create a new method called *displayInventorySummary()* that does not bring in any parameters and does not return anything. In this method you will:
 
@@ -59,14 +55,12 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
     - Display the following header: “----------Inventory Summary----------"
     - Print out the total number of pets ever placed in the system, the total number of pets that have been adopted, and the total number of pets that are currently available.
     
-    <caption><strong>Example Console Output:</strong></caption>
-
-    ``` 
+    <figure><figcaption>Console Output:</figcaption><pre> 
      ----------Inventory Summary----------
      Total number of pets that have come through the adoption center: 3
      Total number of pets that have been adopted: 1
      Total number of pets that are currently available for adoption: 2
-    ```
+    </pre></figure>
 
 6.	Modify case 6 ("View all pets") in the `switch` statement in the *open()* method.
 
@@ -115,13 +109,11 @@ Includes content from [Appendix III: Scanner](../app3_Scanner.md).
 
     - After both `do-while` loops end, display a summary of the transaction by printing a transaction summary header, the number of pets adopted this visit, and the total fees due. 
 
-    <caption><strong>Example Console Output:</strong></caption>
-
-    ``` 
+    <figure><figcaption>Console Output:</figcaption><pre>
      ----------Transaction Summary----------
      Pets adopted this visit: 3
      Total adoption fees due: $76.25 
-    ```
+    </pre></figure>
 
 11.	Modify case 5 ("Adopt a pet") in the `switch` statement in the *open()* method.
 
