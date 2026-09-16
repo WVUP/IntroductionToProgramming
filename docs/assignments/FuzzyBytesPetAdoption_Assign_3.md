@@ -8,14 +8,14 @@
 3.	Create a method called *toString()* that does not use parameters. The method should return a String with the following output. Use escape characters for formatting. Replace `<DOG NAME>` with the capitalized version of the value held in name, replace `<#>` for the numerical values held in age and weight, and replace the other placeholders `<Breed>`, `<true/false>`, `<Personality>` with their respective variable values.
 
     <figure><figcaption>Returned String Format:</figcaption><pre>
-     Name: <DOG NAME>
-        Age: &lt#&gt years
-        Breed: &ltBreed&gt
-        Weight: &lt#&gt lbs
-        House Trained: &lttrue/false&gt
-        Personality: &ltPersonality&gt
-        Hypoallergenic: &lttrue/false&gt
-        Adopted: &lttrue/false&gt
+     Name: &lt;;DOG NAME&gt;;
+        Age: &lt;;#&gt;; years
+        Breed: &lt;Breed&gt;
+        Weight: &lt;#&gt; lbs
+        House Trained: &lt;true/false&gt;
+        Personality: &lt;Personality&gt;
+        Hypoallergenic: &lt;true/false&gt;
+        Adopted: &lt;true/false&gt;
     </pre></figure>
 
 ## Cat Class
@@ -26,13 +26,13 @@
 3.	Create a method called *toString()* that does not use parameters. The method should return a String with the following output. Use escape characters for formatting. Replace `<CAT NAME>` with the capitalized version of the value held in name, replace `<#>` for the numerical value held in age, and replace the other placeholders `<Breed>`, `<true/false>`, `<Fur length>` with their respective variable values.
 
     <figure><figcaption>Returned String Format:</figcaption><pre>
-     Name: &ltCAT NAME&gt
-        Age: &lt#&gt years
-        Breed: &ltBreed&gt
-        Indoors Only: &lttrue/false&gt
-        Litter Trained: &lttrue/false&gt
-        Fur Length: &ltFur length&gt
-        Adopted: &lttrue/false&gt
+     Name: &lt;CAT NAME&gt;
+        Age: &lt;#&gt; years
+        Breed: &lt;Breed&gt;
+        Indoors Only: &lt;true/false&gt;
+        Litter Trained: &lt;true/false&gt;
+        Fur Length: &lt;Fur length&gt;
+        Adopted: &lt;true/false&gt;
     </pre></figure>
 
 
@@ -44,13 +44,13 @@
 3.	Create a method called *toString()* that does not use parameters. The method should return a String with the following output. Use escape characters for formatting. Replace `<BIRD NAME>` with the capitalized version of the value held in name, replace `<#>` for the numerical values held in age, wingspan, and lifespan, and replace the other placeholders `<Species>`, and `<true/false>` with their respective variable values.
 
     <figure><figcaption>Returned String Format:</figcaption><pre>
-     Name: &ltBIRD NAME&gt
-        Age: &lt#&gt years
-        Species: &ltSpecies&gt
-        Wingspan: &lt#&gt in
-        Can Talk: &lttrue/false&gt
-        Lifespan: &lt#&gt years
-        Adopted: &lttrue/false&gt
+     Name: &lt;BIRD NAME&gt;
+        Age: &lt;#&gt; years
+        Species: &lt;Species&gt;
+        Wingspan: &lt;#&gt; in
+        Can Talk: &lt;true/false&gt;
+        Lifespan: &lt;#&gt; years
+        Adopted: &lt;true/false&gt;
     </pre></figure>
 
 ## FuzzyBytesPetAdoption Class

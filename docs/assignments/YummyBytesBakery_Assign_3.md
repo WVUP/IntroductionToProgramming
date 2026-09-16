@@ -8,12 +8,12 @@
 3.	Create a method called *toString()* that does not use parameters. The method should return a String with the following output. Replace `<COOKIE NAME>` with the capitalized version of the value held in name, and `<#>` for the numerical value held in each respective variable.
 
     <figure><figcaption>Returned String Format:</figcaption><pre>
-     Name: &ltCOOKIE NAME&gt
-        Flour: &lt#&gt cups
-        Sugar: &lt#&gt cups
-        Butter: &lt#&gt sticks
-        Nuts: &lt#&gt bags
-        Chocolate Chips: &lt#&gt bags
+     Name: &lt;COOKIE NAME&gt;
+        Flour: &lt;#&gt; cups
+        Sugar: &lt;#&gt; cups
+        Butter: &lt;#&gt; sticks
+        Nuts: &lt;#&gt; bags
+        Chocolate Chips: &lt;#&gt; bags
     </pre></figure>
 
 
@@ -26,14 +26,14 @@
 3.	Create a method called *toString()* that does not use parameters. The method should return a String with the following output. Replace `<MUFFIN NAME>` with the capitalized version of the value held in name, and `<#>` for the numerical value held in each respective variable.
 
     <figure><figcaption>Returned String Format:</figcaption><pre>
-     Name: &ltMUFFIN NAME&gt
-        Flour: &lt#&gt cups
-        Baking Powder: &lt#&gt tsp
-        Salt: &lt#&gt tsp
-        Sugar: &lt#&gt cups
-        Eggs: &lt#&gt
-        Milk: &lt#&gt cups
-        Vegetable Oil: &lt#&gt cups
+     Name: &lt;MUFFIN NAME&gt;
+        Flour: &lt;#&gt; cups
+        Baking Powder: &lt;#&gt; tsp
+        Salt: &lt;#&gt; tsp
+        Sugar: &lt;#&gt; cups
+        Eggs: &lt;#&gt;
+        Milk: &lt;#&gt; cups
+        Vegetable Oil: &lt;#&gt; cups
     </pre></figure>
 
 
@@ -45,13 +45,13 @@
 3.	Create a method called *toString()* that does not use parameters. The method should return a String with the following output. Replace `<DOUGHNUT NAME>` with the capitalized version of the value held in name, and `<#>` for the numerical value held in each respective variable.
 
     <figure><figcaption>Returned String Format:</figcaption><pre>
-     Name: &ltDOUGHNUT NAME&gt
-        Milk: &lt#&gt cups
-        Yeast: &lt#&gt packets
-        Sugar: &lt#&gt cups
-        Eggs: &lt#&gt
-        Butter: &lt#&gt sticks
-        Flour: &lt#&gt cups
+     Name: &lt;DOUGHNUT NAME&gt;
+        Milk: &lt;#&gt; cups
+        Yeast: &lt;#&gt; packets
+        Sugar: &lt;#&gt; cups
+        Eggs: &lt;#&gt;
+        Butter: &lt;#&gt; sticks
+        Flour: &lt;#&gt; cups
     </pre></figure>	
 
 ## YummyBytesBakery Class
