@@ -8,7 +8,7 @@
 3.	Create a method called *toString()* that does not use parameters. The method should return a String with the following output. Use escape characters for formatting. Replace `<DOG NAME>` with the capitalized version of the value held in name, replace `<#>` for the numerical values held in age and weight, and replace the other placeholders `<Breed>`, `<true/false>`, `<Personality>` with their respective variable values.
 
     <figure><figcaption>Returned String Format:</figcaption><pre>
-     Name: &ltDOG NAME&gt
+     Name: <DOG NAME>
         Age: &lt#&gt years
         Breed: &ltBreed&gt
         Weight: &lt#&gt lbs
